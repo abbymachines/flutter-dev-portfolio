@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_portfolio/widgets/item_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
                 'Wurm is a habit tracker attached to a tamagotchi-style virtual pet. Currently in development using Flutter for Android, iOS, and the web. The app allows you to keep a list of habits and track their completion over time. When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.',
                 textAlign: TextAlign.center,
               ),
+              ItemList(),
             ], // ❤️ LEFT OFF HERE
           ),
         ),
