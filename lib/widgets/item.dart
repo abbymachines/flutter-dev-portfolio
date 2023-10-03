@@ -11,7 +11,24 @@ class Item extends StatelessWidget {
       color: Colors.grey,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-        child: Text(label),
+        child: Column(
+          children: [
+            Text(
+              label,
+              style: Theme.of(context).textTheme.titleLarge,
+              textAlign: TextAlign.justify,
+            ),
+            const SizedBox(height: 4),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                const Spacer(),
+                Text(label),
+                const Spacer(),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
