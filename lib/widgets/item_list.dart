@@ -10,12 +10,14 @@ class ItemList extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return const Column(
-      children: [
-        Item('shout out to flutter'),
-        Item('shout out to Item'),
-        Item('its me fr fr'),
-      ],
+    return const Expanded(
+      child: Column(
+        children: [
+          Item('shout out to flutter'),
+          Item('shout out to Item'),
+          Item('its me fr fr'),
+        ],
+      ),
     );
   }
 }

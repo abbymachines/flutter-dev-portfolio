@@ -7,6 +7,12 @@ class Item extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Card(color: Colors.grey, child: Text(label));
+    return Card(
+      color: Colors.grey,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: Text(label),
+      ),
+    );
   }
 }
