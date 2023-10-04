@@ -12,6 +12,7 @@ class Item extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Text(
               label,
