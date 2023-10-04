@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
           width: double.infinity,
           padding: const EdgeInsets.all(16),
           child: const Column(
+            mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
