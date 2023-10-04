@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_portfolio/widgets/item.dart';
+import 'package:flutter_dev_portfolio/widgets/items/item.dart';
 
 class ItemList extends StatelessWidget {
   const ItemList(
