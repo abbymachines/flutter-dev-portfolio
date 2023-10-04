@@ -11,11 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter First App',
+      title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
-        appBar:
-            AppBar(title: const Text("Abby's yummy & delicious dev portfolio")),
+        appBar: AppBar(title: const Text("Abby Castillo [dot] Dev")),
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -35,10 +34,11 @@ class MyApp extends StatelessWidget {
             children: [
               Text(
                 'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
               SizedBox(height: 16),
