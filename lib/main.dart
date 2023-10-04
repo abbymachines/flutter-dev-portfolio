@@ -17,6 +17,15 @@ class MyApp extends StatelessWidget {
         appBar:
             AppBar(title: const Text("Abby's yummy & delicious dev portfolio")),
         body: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(255, 19, 52, 5),
+              Color.fromARGB(255, 209, 243, 17),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          )),
           width: double.infinity,
           padding: const EdgeInsets.all(16),
           child: const Column(
