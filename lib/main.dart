@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             AppBar(title: const Text("Abby's yummy & delicious dev portfolio")),
         body: Container(
           width: double.infinity,
-          padding: const EdgeInsets.all(0),
+          padding: const EdgeInsets.all(16),
           child: const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
