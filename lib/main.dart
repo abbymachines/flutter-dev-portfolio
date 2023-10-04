@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_portfolio/widgets/item_list.dart';
+import 'package:flutter_dev_portfolio/widgets/items/item_list.dart';
 
 void main() {
   runApp(const MyApp());
