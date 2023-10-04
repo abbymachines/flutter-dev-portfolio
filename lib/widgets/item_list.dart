@@ -10,7 +10,9 @@ class ItemList extends StatelessWidget {
 
   @override
   Widget build(context) {
+    // return ListView.builder(itemBuilder: itemBuilder) // ⚠️ left off here
     return const Expanded(
+      flex: 1,
       child: Column(
         children: [
           Item('shout out to flutter'),
