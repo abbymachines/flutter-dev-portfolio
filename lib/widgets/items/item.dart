@@ -1,14 +1,28 @@
 import 'package:flutter/material.dart';
 
-class Item extends StatelessWidget {
+class Item extends StatefulWidget {
   const Item(this.label, {super.key});
 
   final String label;
+  // final Widget? child;
 
   @override
-  Widget build(context) {
+  State<Item> createState() => _ItemState();
+}
+
+class _ItemState extends State<Item> {
+  double _size = 1.0;
+
+  void grow() {
+    setState(() {
+      _size += 0.1;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => print(label),
+      onTap: grow,
       child: Card(
         color: Colors.grey,
         child: Padding(
@@ -17,16 +31,17 @@ class Item extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                label,
+                widget.label,
                 style: Theme.of(context).textTheme.titleLarge,
                 textAlign: TextAlign.justify,
               ),
+              Text(_size.toString()),
               const SizedBox(height: 4),
               Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   const Spacer(),
-                  Text(label),
+                  Text(widget.label),
                   const Spacer(),
                 ],
               ),
@@ -37,3 +52,19 @@ class Item extends StatelessWidget {
     );
   }
 }
+
+// import 'package:flutter/material.dart';
+
+// class Item extends StatefulWidget {
+//   const Item(this.label, {super.key});
+
+//   final String label;
+
+//   @override
+  
+
+//   @override
+//   Widget build(context) {
+    
+//   }
+// }
