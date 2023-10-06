@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           )),
-          width: double.infinity,
+          // width: double.infinity,
           padding: const EdgeInsets.all(16),
           child: const Column(
             mainAxisSize: MainAxisSize.min,
@@ -42,12 +42,8 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 16),
-              // Text(
-              //   'Wurm is a habit tracker attached to a tamagotchi-style virtual pet. Currently in development using Flutter for Android, iOS, and the web. The app allows you to keep a list of habits and track their completion over time. When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.',
-              //   textAlign: TextAlign.center,
-              // ),
               ItemList(),
-            ], // ❤️ LEFT OFF HERE
+            ],
           ),
         ),
       ),

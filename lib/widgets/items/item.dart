@@ -39,10 +39,10 @@ class _ItemState extends State<Item> {
               Text(_size.toString()),
               const SizedBox(height: 4),
               Row(
-                mainAxisSize: MainAxisSize.max,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   const Spacer(),
-                  Text(widget.item.label),
+                  Flexible(child: Text(widget.item.expandedText)),
                   const Spacer(),
                 ],
               ),
