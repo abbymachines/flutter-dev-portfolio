@@ -11,11 +11,11 @@ class Item extends StatefulWidget {
 }
 
 class _ItemState extends State<Item> {
-  double _size = 1.0;
+  int _size = 1;
 
   void grow() {
     setState(() {
-      _size += 0.1;
+      _size += 1;
     });
   }
 
