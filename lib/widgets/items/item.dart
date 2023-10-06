@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
 
 class Item extends StatefulWidget {
-  const Item(this.label, {super.key});
+  const Item(this.item, {super.key});
 
-  final String label;
+  final PortfolioItem item;
   // final Widget? child;
 
   @override
@@ -31,7 +32,7 @@ class _ItemState extends State<Item> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                widget.label,
+                widget.item.label,
                 style: Theme.of(context).textTheme.titleLarge,
                 textAlign: TextAlign.justify,
               ),
@@ -41,7 +42,7 @@ class _ItemState extends State<Item> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   const Spacer(),
-                  Text(widget.label),
+                  Text(widget.item.label),
                   const Spacer(),
                 ],
               ),
