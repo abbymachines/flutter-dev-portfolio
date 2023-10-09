@@ -41,7 +41,6 @@ class _ItemState extends State<Item> {
                 style: Theme.of(context).textTheme.titleLarge,
                 textAlign: TextAlign.justify,
               ),
-              Text(_isExpanded.toString()),
               const SizedBox(height: 4),
               Row(
                 mainAxisSize: MainAxisSize.min,
