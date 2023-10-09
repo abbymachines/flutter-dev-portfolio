@@ -12,18 +12,25 @@ class Item extends StatefulWidget {
 }
 
 class _ItemState extends State<Item> {
-  int _size = 1;
+  // int _size = 1;
+  var _isExpanded = false;
 
-  void grow() {
-    setState(() {
-      _size += 1;
-    });
+  void toggleExpanded() {
+    if (_isExpanded == false) {
+      setState(() {
+        _isExpanded = true;
+      });
+    } else {
+      setState(() {
+        _isExpanded = false;
+      });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: grow,
+      onTap: toggleExpanded,
       child: Card(
         color: Colors.grey,
         child: Padding(
@@ -36,7 +43,7 @@ class _ItemState extends State<Item> {
                 style: Theme.of(context).textTheme.titleLarge,
                 textAlign: TextAlign.justify,
               ),
-              Text(_size.toString()),
+              Text(_isExpanded.toString()),
               const SizedBox(height: 4),
               Row(
                 mainAxisSize: MainAxisSize.min,
