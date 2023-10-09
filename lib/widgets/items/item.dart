@@ -30,7 +30,7 @@ class _ItemState extends State<Item> {
     return InkWell(
       onTap: toggleExpanded,
       child: Card(
-        color: Colors.grey,
+        color: Color.fromARGB(255, 192, 192, 192),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
           child: Column(
