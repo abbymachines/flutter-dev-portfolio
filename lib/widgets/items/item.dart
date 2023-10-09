@@ -47,7 +47,13 @@ class _ItemState extends State<Item> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const Spacer(),
-                  Flexible(child: Text(widget.item.expandedText)),
+                  Flexible(child: Text((() {
+                    if (_isExpanded) {
+                      return "tis true";
+                    }
+
+                    return "anything but true";
+                  })())),
                   const Spacer(),
                 ],
               ),
