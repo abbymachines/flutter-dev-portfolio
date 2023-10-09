@@ -49,10 +49,10 @@ class _ItemState extends State<Item> {
                   const Spacer(),
                   Flexible(child: Text((() {
                     if (_isExpanded) {
-                      return "tis true";
+                      return widget.item.expandedText;
                     }
 
-                    return "anything but true";
+                    return "";
                   })())),
                   const Spacer(),
                 ],
