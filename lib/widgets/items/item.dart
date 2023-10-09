@@ -5,14 +5,12 @@ class Item extends StatefulWidget {
   const Item(this.item, {super.key});
 
   final PortfolioItem item;
-  // final Widget? child;
 
   @override
   State<Item> createState() => _ItemState();
 }
 
 class _ItemState extends State<Item> {
-  // int _size = 1;
   var _isExpanded = false;
 
   void toggleExpanded() {
