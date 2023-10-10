@@ -1,6 +1,11 @@
 import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
 
 final items = [
+  PortfolioItem(
+      label:
+          'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
+      expandedText:
+          'I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know'),
   PortfolioItem(label: 'Habit Pet', expandedText: 'who woulda thunk'),
   PortfolioItem(
       label: 'item',
