@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_portfolio/widgets/items/header_item.dart';
 import 'package:flutter_dev_portfolio/widgets/items/item_list.dart';
 
 void main() {
@@ -27,21 +28,13 @@ class MyApp extends StatelessWidget {
           )),
           // width: double.infinity,
           padding: const EdgeInsets.all(16),
-          child: const Column(
+          child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
               SizedBox(height: 16),
+              HeaderItem(),
               ItemList(),
             ],
           ),
