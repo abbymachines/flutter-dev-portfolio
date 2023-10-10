@@ -7,7 +7,8 @@ final items = [
           'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
       expandedText:
           'I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know',
-      color: const Color.fromARGB(255, 230, 5, 5)),
+      color: const Color.fromARGB(255, 230, 5, 5),
+      style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
   PortfolioItem(label: 'Habit Pet', expandedText: 'who woulda thunk'),
   PortfolioItem(
       label: 'item',

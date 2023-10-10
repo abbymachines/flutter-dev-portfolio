@@ -8,12 +8,12 @@ class PortfolioItem {
     required this.label,
     required this.expandedText,
     this.color = const Color.fromARGB(255, 192, 192, 192),
-    this.style,
+    this.style = const TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
   }) : key = uuid.v4();
 
   final String label;
   final String expandedText;
   final Color? color;
-  final String? style;
+  final TextStyle? style;
   final String key;
 }

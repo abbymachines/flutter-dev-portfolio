@@ -39,7 +39,7 @@ class _ItemState extends State<Item> {
             children: [
               Text(
                 widget.item.label,
-                style: Theme.of(context).textTheme.titleLarge,
+                style: widget.item.style,
                 textAlign: TextAlign.left,
               ),
               const SizedBox(height: 4),
