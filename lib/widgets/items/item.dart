@@ -44,16 +44,16 @@ class _ItemState extends State<Item> {
               ),
               const SizedBox(height: 4),
               Row(
-                mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Spacer(),
-                  Flexible(child: Text((() {
-                    if (_isExpanded) {
-                      return widget.item.expandedText;
-                    }
+                  Flexible(
+                      fit: FlexFit.loose,
+                      child: Text((() {
+                        if (_isExpanded) {
+                          return widget.item.expandedText;
+                        }
 
-                    return "";
-                  })())),
+                        return "";
+                      })())),
                   const Spacer(),
                 ],
               ),
