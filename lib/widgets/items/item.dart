@@ -30,16 +30,17 @@ class _ItemState extends State<Item> {
     return InkWell(
       onTap: toggleExpanded,
       child: Card(
-        color: Color.fromARGB(255, 192, 192, 192),
+        color: const Color.fromARGB(255, 192, 192, 192),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
                 widget.item.label,
                 style: Theme.of(context).textTheme.titleLarge,
-                textAlign: TextAlign.justify,
+                textAlign: TextAlign.left,
               ),
               const SizedBox(height: 4),
               Row(

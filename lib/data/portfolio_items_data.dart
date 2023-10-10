@@ -1,7 +1,7 @@
 import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
 
 final items = [
-  PortfolioItem(label: 'item', expandedText: 'who woulda thunk'),
+  PortfolioItem(label: 'Habit Pet', expandedText: 'who woulda thunk'),
   PortfolioItem(
       label: 'item',
       expandedText:
