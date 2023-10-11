@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/widgets/items/header_item.dart';
 import 'package:flutter_dev_portfolio/widgets/items/item_list.dart';
+import 'package:flutter_dev_portfolio/widgets/pet/pet_box.dart';
+import 'package:flutter_dev_portfolio/models/pet.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,12 +30,13 @@ class MyApp extends StatelessWidget {
           )),
           // width: double.infinity,
           padding: const EdgeInsets.all(16),
-          child: const Column(
+          child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ItemList(),
+              PetBox(Pet(creature: 'sproutling')),
+              const ItemList(),
             ],
           ),
         ),
