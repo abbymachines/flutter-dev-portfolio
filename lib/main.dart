@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_portfolio/models/blog_post.dart';
 
 import 'package:flutter_dev_portfolio/widgets/items/item_list.dart';
 import 'package:flutter_dev_portfolio/widgets/pet/pet_box.dart';
 import 'package:flutter_dev_portfolio/models/pet.dart';
+import 'package:flutter_dev_portfolio/widgets/blog/blog_post_item.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +36,13 @@ class MyApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [const ItemList(), PetBox(Pet(creature: 'sproutling'))],
+            children: [
+              BlogPostItem(
+                BlogPost(date: '2023.10.10', body: 'trying my best'),
+              ),
+              const ItemList(),
+              PetBox(Pet(creature: 'sproutling'))
+            ],
           ),
         ),
       ),

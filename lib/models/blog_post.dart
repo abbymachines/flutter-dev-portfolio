@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 
 class BlogPost {
   BlogPost({
-    required this.posts,
+    required this.date,
+    required this.body,
+    this.tags = const [],
   });
 
-  final List posts;
+  final String date;
+  final String body;
+  final List<String> tags;
 }
