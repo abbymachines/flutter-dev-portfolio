@@ -22,14 +22,18 @@ class _PetBoxState extends State<PetBox> {
 
   @override
   Widget build(BuildContext) {
-    return Row(
-      children: [
-        Text(_health.toString()),
-        Text(
-          'i am the silly little ${widget.pet.creature}',
-        ),
-        TextButton(onPressed: increaseHealth, child: const Text('feed me'))
-      ],
+    return Container(
+      decoration:
+          const BoxDecoration(color: Color.fromARGB(255, 247, 233, 233)),
+      child: Row(
+        children: [
+          Text(_health.toString()),
+          Text(
+            'i am the silly little ${widget.pet.creature}',
+          ),
+          TextButton(onPressed: increaseHealth, child: const Text('feed me'))
+        ],
+      ),
     );
   }
 }

@@ -34,10 +34,7 @@ class MyApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              PetBox(Pet(creature: 'sproutling')),
-              const ItemList(),
-            ],
+            children: [const ItemList(), PetBox(Pet(creature: 'sproutling'))],
           ),
         ),
       ),
