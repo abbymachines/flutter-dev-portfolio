@@ -11,11 +11,13 @@ final items = [
       style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
   PortfolioItem(label: 'Habit Pet', expandedText: 'who woulda thunk'),
   PortfolioItem(
-      label: 'item',
+      label: 'A',
       expandedText:
-          'the exciting followup to that Item you just scrolled past'),
+          "'A' is a series of AR videos made with Meta Spark Studio."),
   PortfolioItem(
-      label: 'the item strikes back', expandedText: 'we thought it was gone'),
+      label: 'Skills',
+      expandedText:
+          'Flutter / React / Kotlin(?) / Flask / SQL / REST APIs / full-stack development'),
   PortfolioItem(label: 'infinity item', expandedText: 'end item'),
   PortfolioItem(
       label: 'item begins',
