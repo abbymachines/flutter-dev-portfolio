@@ -21,13 +21,18 @@ class _PetBoxState extends State<PetBox> {
   }
 
   @override
-  Widget build(BuildContext) {
+  Widget build(BuildContext context) {
     return Container(
       decoration:
           const BoxDecoration(color: Color.fromARGB(255, 247, 233, 233)),
       child: Row(
         children: [
           Text(_health.toString()),
+          // Image.asset(
+          //   'assets/sproutling0.png',
+          //   width: 5,
+          //   height: 5,
+          // ),
           Text(
             'i am the silly little ${widget.pet.creature}',
           ),
