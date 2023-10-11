@@ -4,5 +4,8 @@ class Pet {
   Pet({
     // health
     // creature
-  })
+    required this.creature,
+  });
+
+  final String creature;
 }
