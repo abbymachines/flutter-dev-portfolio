@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
@@ -12,7 +13,7 @@ class GenericItem {
   }) : key = uuid.v4();
 
   final String label;
-  final String expandedText;
+  final Markdown expandedText;
   final Color? color;
   final TextStyle? style;
   final String key;

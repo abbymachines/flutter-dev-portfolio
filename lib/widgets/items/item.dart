@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 class Item extends StatefulWidget {
   const Item(this.item, {super.key});
@@ -43,17 +44,28 @@ class _ItemState extends State<Item> {
                 textAlign: TextAlign.left,
               ),
               const SizedBox(height: 4),
-              Row(
+              const Row(
                 children: [
                   Flexible(
-                      fit: FlexFit.loose,
-                      child: Text((() {
-                        if (_isExpanded) {
-                          return widget.item.expandedText;
-                        }
+                    fit: FlexFit.loose,
+                    child: MarkdownBody(
+                      data: 'whomst',
+                    ),
+                    // Text(
+                    //   (() {
+                    //     if (_isExpanded) {
+                    //       return widget.item.expandedText;
+                    //     }
 
-                        return "";
-                      })())),
+                    //     return "";
+                    //   })(),
+                    // )
+                    // child: Markdown(() {
+                    //   if (_isExpanded) {
+                    //     return Mark
+                    //   }
+                    // }),
+                  ),
                   const Spacer(),
                 ],
               ),

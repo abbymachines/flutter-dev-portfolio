@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 class BlogPost {
   BlogPost({
@@ -8,6 +9,6 @@ class BlogPost {
   });
 
   final String date;
-  final String body;
+  final Markdown body;
   final List<String> tags;
 }
