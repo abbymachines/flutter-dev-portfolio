@@ -12,8 +12,21 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  dynamic _screenContent = ItemList();
+
+  void setBlogScreen() {
+    setState(() {
+      _screenContent = BlogColumn(blog: Blog(posts: blogPostData));
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +55,13 @@ class MyApp extends StatelessWidget {
               // SizedBox(
               //     height: 200,
               //     child: BlogColumn(blog: Blog(posts: blogPostData))),
-              BlogColumn(blog: Blog(posts: blogPostData)),
-              const ItemList(),
+              TextButton(
+                onPressed: setBlogScreen,
+                child: Text('lol'),
+              ),
+              // BlogColumn(blog: Blog(posts: blogPostData)),
+              // const ItemList(),
+              _screenContent,
               PetBox(Pet(creature: 'sproutling'))
             ],
           ),
