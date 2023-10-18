@@ -13,15 +13,18 @@ class Item extends StatefulWidget {
 
 class _ItemState extends State<Item> {
   var _isExpanded = false;
+  var _expandedContent = MarkdownBody(data: '');
 
   void toggleExpanded() {
     if (_isExpanded == false) {
       setState(() {
         _isExpanded = true;
+        _expandedContent = MarkdownBody(data: 'thank u for expanding me :3');
       });
     } else {
       setState(() {
         _isExpanded = false;
+        _expandedContent = MarkdownBody(data: '');
       });
     }
   }
@@ -44,13 +47,11 @@ class _ItemState extends State<Item> {
                 textAlign: TextAlign.left,
               ),
               const SizedBox(height: 4),
-              const Row(
+              Row(
                 children: [
                   Flexible(
                     fit: FlexFit.loose,
-                    child: MarkdownBody(
-                      data: 'whomst',
-                    ),
+                    child: _expandedContent,
                     // Text(
                     //   (() {
                     //     if (_isExpanded) {
