@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
+import 'package:flutter_dev_portfolio/models/generic_item.dart';
 
 import 'package:flutter_dev_portfolio/widgets/items/item.dart';
 import 'package:flutter_dev_portfolio/models/blog_post.dart';

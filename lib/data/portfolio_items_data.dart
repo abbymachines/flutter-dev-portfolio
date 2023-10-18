@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
+import 'package:flutter_dev_portfolio/models/generic_item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 final items = [
   GenericItem(
     label: 'markdown test :3',
-    expandedText: const MarkdownBody(
-      data: 'shout out to web development',
-    ),
-  )
+    expandedText: 'shout out to web development',
+  ),
 ];
 
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
+import 'package:flutter_dev_portfolio/models/generic_item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 class Item extends StatefulWidget {
@@ -13,7 +13,7 @@ class Item extends StatefulWidget {
 
 class _ItemState extends State<Item> {
   var _isExpanded = false;
-  var _expandedContent = const MarkdownBody(data: '');
+  var _expandedContent = '';
 
   void toggleExpanded() {
     if (_isExpanded == false) {
@@ -24,7 +24,7 @@ class _ItemState extends State<Item> {
     } else {
       setState(() {
         _isExpanded = false;
-        _expandedContent = const MarkdownBody(data: '');
+        _expandedContent = '';
       });
     }
   }
@@ -51,7 +51,7 @@ class _ItemState extends State<Item> {
                 children: [
                   Flexible(
                     fit: FlexFit.loose,
-                    child: _expandedContent,
+                    child: MarkdownBody(data: _expandedContent),
                     // Text(
                     //   (() {
                     //     if (_isExpanded) {
