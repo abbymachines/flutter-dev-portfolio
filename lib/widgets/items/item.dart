@@ -70,18 +70,6 @@ class _ItemState extends State<Item> {
                   const Spacer(),
                 ],
               ),
-              RichText(
-                text: const TextSpan(
-                  text: 'shout out to rich text ',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                  children: <TextSpan>[
-                    TextSpan(
-                        text: 'so tasty ',
-                        style: TextStyle(fontWeight: FontWeight.normal)),
-                    TextSpan(text: 'and so sweet'),
-                  ],
-                ),
-              ),
             ],
           ),
         ),
