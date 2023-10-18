@@ -13,7 +13,7 @@ class Item extends StatefulWidget {
 
 class _ItemState extends State<Item> {
   var _isExpanded = false;
-  var _expandedContent = MarkdownBody(data: '');
+  var _expandedContent = const MarkdownBody(data: '');
 
   void toggleExpanded() {
     if (_isExpanded == false) {
@@ -24,7 +24,7 @@ class _ItemState extends State<Item> {
     } else {
       setState(() {
         _isExpanded = false;
-        _expandedContent = MarkdownBody(data: '');
+        _expandedContent = const MarkdownBody(data: '');
       });
     }
   }
