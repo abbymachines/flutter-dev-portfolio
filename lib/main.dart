@@ -28,6 +28,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void setPortfolioScreen() {
+    setState(() {
+      _screenContent = ItemList();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -55,13 +61,23 @@ class _MyAppState extends State<MyApp> {
               // SizedBox(
               //     height: 200,
               //     child: BlogColumn(blog: Blog(posts: blogPostData))),
-              TextButton(
-                onPressed: setBlogScreen,
-                child: Text('lol'),
-              ),
+              // TextButton(
+              //   onPressed: setBlogScreen,
+              //   child: Text('Take me to the blog'),
+              //   style: ButtonStyle(backgroundColor: Colors.white),
+              // ),
               // BlogColumn(blog: Blog(posts: blogPostData)),
               // const ItemList(),
               _screenContent,
+              ButtonBar(
+                children: [
+                  TextButton(
+                      onPressed: setBlogScreen, child: const Text('BLOG')),
+                  TextButton(
+                      onPressed: setPortfolioScreen,
+                      child: const Text('PORTFOLIO'))
+                ],
+              ),
               PetBox(Pet(creature: 'sproutling'))
             ],
           ),
