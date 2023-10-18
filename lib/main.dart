@@ -58,17 +58,8 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // SizedBox(
-              //     height: 200,
-              //     child: BlogColumn(blog: Blog(posts: blogPostData))),
-              // TextButton(
-              //   onPressed: setBlogScreen,
-              //   child: Text('Take me to the blog'),
-              //   style: ButtonStyle(backgroundColor: Colors.white),
-              // ),
-              // BlogColumn(blog: Blog(posts: blogPostData)),
-              // const ItemList(),
               _screenContent,
+              PetBox(Pet(creature: 'sproutling')),
               ButtonBar(
                 children: [
                   TextButton(
@@ -78,7 +69,6 @@ class _MyAppState extends State<MyApp> {
                       child: const Text('PORTFOLIO'))
                 ],
               ),
-              PetBox(Pet(creature: 'sproutling'))
             ],
           ),
         ),
