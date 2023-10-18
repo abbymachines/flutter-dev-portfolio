@@ -5,7 +5,7 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 final items = [
   GenericItem(
     label: 'markdown test :3',
-    expandedText: const Markdown(
+    expandedText: const MarkdownBody(
       data: 'shout out to web development',
     ),
   )

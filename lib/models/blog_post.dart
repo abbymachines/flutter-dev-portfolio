@@ -9,6 +9,6 @@ class BlogPost {
   });
 
   final String date;
-  final Markdown body;
+  final MarkdownBody body;
   final List<String> tags;
 }

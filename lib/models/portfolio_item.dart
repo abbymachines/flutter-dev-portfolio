@@ -13,7 +13,7 @@ class GenericItem {
   }) : key = uuid.v4();
 
   final String label;
-  final Markdown expandedText;
+  final MarkdownBody expandedText;
   final Color? color;
   final TextStyle? style;
   final String key;

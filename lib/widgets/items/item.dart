@@ -19,7 +19,7 @@ class _ItemState extends State<Item> {
     if (_isExpanded == false) {
       setState(() {
         _isExpanded = true;
-        _expandedContent = MarkdownBody(data: 'thank u for expanding me :3');
+        _expandedContent = widget.item.expandedText;
       });
     } else {
       setState(() {
