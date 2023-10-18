@@ -3,8 +3,8 @@ import 'package:uuid/uuid.dart';
 
 const uuid = Uuid();
 
-class PortfolioItem {
-  PortfolioItem({
+class GenericItem {
+  GenericItem({
     required this.label,
     required this.expandedText,
     this.color = const Color.fromARGB(255, 192, 192, 192),

@@ -36,7 +36,7 @@ class _PetBoxState extends State<PetBox> {
           Text(
             'i am the silly little ${widget.pet.creature}',
           ),
-          TextButton(onPressed: increaseHealth, child: const Text('feed me'))
+          TextButton(onPressed: increaseHealth, child: const Text('feed me')),
         ],
       ),
     );

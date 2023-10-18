@@ -40,7 +40,9 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              BlogColumn(blog: Blog(posts: blogPostData)),
+              SizedBox(
+                  height: 200,
+                  child: BlogColumn(blog: Blog(posts: blogPostData))),
               const ItemList(),
               PetBox(Pet(creature: 'sproutling'))
             ],

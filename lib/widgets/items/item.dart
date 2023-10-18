@@ -4,7 +4,7 @@ import 'package:flutter_dev_portfolio/models/portfolio_item.dart';
 class Item extends StatefulWidget {
   const Item(this.item, {super.key});
 
-  final PortfolioItem item;
+  final GenericItem item;
 
   @override
   State<Item> createState() => _ItemState();
@@ -56,6 +56,18 @@ class _ItemState extends State<Item> {
                       })())),
                   const Spacer(),
                 ],
+              ),
+              RichText(
+                text: const TextSpan(
+                  text: 'shout out to rich text ',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                  children: <TextSpan>[
+                    TextSpan(
+                        text: 'so tasty ',
+                        style: TextStyle(fontWeight: FontWeight.normal)),
+                    TextSpan(text: 'and so sweet'),
+                  ],
+                ),
               ),
             ],
           ),

@@ -12,7 +12,7 @@ class BlogPostItem extends StatelessWidget {
   @override
   Widget build(context) {
     return Item(
-      PortfolioItem(
+      GenericItem(
           label: post.date,
           expandedText: post.body,
           color: const Color.fromARGB(250, 213, 121, 255)),
