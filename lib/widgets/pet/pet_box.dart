@@ -28,13 +28,13 @@ class _PetBoxState extends State<PetBox> {
       child: Row(
         children: [
           Text(_health.toString()),
-          // Image.asset(
-          //   'assets/sproutling0.png',
-          //   width: 5,
-          //   height: 5,
-          // ),
+          Image.asset(
+            'assets/sproutling0.png',
+            width: 70,
+            height: 70,
+          ),
           Text(
-            'i am the silly little ${widget.pet.creature}',
+            'it\'s me, the ${widget.pet.creature}!',
           ),
           TextButton(onPressed: increaseHealth, child: const Text('feed me')),
         ],
