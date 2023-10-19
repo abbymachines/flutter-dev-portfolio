@@ -52,21 +52,6 @@ class _ItemState extends State<Item> {
                   Flexible(
                     fit: FlexFit.loose,
                     child: MarkdownBody(data: _expandedContent),
-
-                    // Text(
-                    //   (() {
-                    //     if (_isExpanded) {
-                    //       return widget.item.expandedText;
-                    //     }
-
-                    //     return "";
-                    //   })(),
-                    // )
-                    // child: Markdown(() {
-                    //   if (_isExpanded) {
-                    //     return Mark
-                    //   }
-                    // }),
                   ),
                   const Spacer(),
                 ],
