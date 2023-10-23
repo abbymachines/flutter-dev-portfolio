@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/generic_item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:flutter_dev_portfolio/constants/images.dart';
 
 class Item extends StatefulWidget {
   const Item(this.item, {super.key});
@@ -48,7 +49,10 @@ class _ItemState extends State<Item> {
               ),
               Text(
                 widget.item.mainText,
-                style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+                style: const TextStyle(
+                    fontSize: 20,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.white),
               ),
               const SizedBox(height: 4),
               Row(
@@ -59,6 +63,11 @@ class _ItemState extends State<Item> {
                   ),
                   const Spacer(),
                 ],
+              ),
+              Image.asset(
+                Images.sproutling,
+                width: 50,
+                height: 50,
               ),
             ],
           ),

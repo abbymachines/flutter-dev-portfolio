@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:uuid/uuid.dart';
+import 'package:flutter_dev_portfolio/constants/images.dart';
 
 const uuid = Uuid();
+final defaultImage = Image.asset(Images.sproutling);
 
 class GenericItem {
   GenericItem({
@@ -11,6 +13,7 @@ class GenericItem {
     required this.expandedText,
     this.color = const Color.fromARGB(255, 192, 192, 192),
     this.style = const TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
+    required this.image,
   }) : key = uuid.v4();
 
   final String label;
@@ -19,4 +22,5 @@ class GenericItem {
   final Color? color;
   final TextStyle? style;
   final String key;
+  final Image image;
 }

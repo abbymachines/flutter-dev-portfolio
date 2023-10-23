@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_dev_portfolio/models/pet.dart';
+import 'package:flutter_dev_portfolio/constants/images.dart';
 
 class PetBox extends StatefulWidget {
   const PetBox(this.pet, {super.key});
@@ -29,7 +30,7 @@ class _PetBoxState extends State<PetBox> {
         children: [
           Text(_health.toString()),
           Image.asset(
-            'assets/sproutling0.png',
+            Images.sproutling,
             width: 70,
             height: 70,
           ),
