@@ -14,6 +14,7 @@ class BlogPostItem extends StatelessWidget {
     return Item(
       GenericItem(
           label: post.date,
+          mainText: post.blurb,
           expandedText: post.body,
           color: const Color.fromARGB(250, 213, 121, 255)),
     );

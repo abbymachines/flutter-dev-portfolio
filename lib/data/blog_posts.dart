@@ -5,6 +5,7 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 final blogPostData = [
   BlogPost(
       date: '2023.10.18',
+      blurb: 'figured out MarkDown in Flutter :)',
       body:
           """How exciting! Now that I have my MarkdownBody widgets properly configured, I can begin my blog in earnest. So hello there. :) Hello world. How's it going? :)
 
