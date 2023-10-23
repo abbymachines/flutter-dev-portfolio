@@ -48,6 +48,7 @@ class _ItemState extends State<Item> {
               ),
               Text(
                 widget.item.mainText,
+                style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
               ),
               const SizedBox(height: 4),
               Row(
