@@ -46,6 +46,9 @@ class _ItemState extends State<Item> {
                 style: widget.item.style,
                 textAlign: TextAlign.left,
               ),
+              Text(
+                widget.item.mainText,
+              ),
               const SizedBox(height: 4),
               Row(
                 children: [

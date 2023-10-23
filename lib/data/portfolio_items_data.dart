@@ -6,6 +6,7 @@ final items = [
   GenericItem(
       label:
           'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
+      mainText: "it's true i think!",
       expandedText:
           'I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know',
       color: Color.fromARGB(255, 255, 195, 15),
@@ -20,7 +21,7 @@ The app allows you to keep a list of habits and track their completion over time
 When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.'''),
   GenericItem(label: 'Simple Pet', expandedText: 'lol'),
   GenericItem(
-      label: 'A',
+      label: 'A (AR video series)',
       expandedText:
           "'A' is a series of AR videos made with Meta Spark Studio."),
   GenericItem(
