@@ -15,10 +15,12 @@ I'm still not entirely sure how to format paragraphs with the way my blog is set
 """),
   BlogPost(
     date: '2023.10.17',
+    blurb: 'please leave a message at the beep',
     body: 'believe it or not, **george** isnt at home',
   ),
   BlogPost(
     date: '2023.10.10',
+    blurb: 'hi',
     body: 'hello world :) hello to you',
   ),
   BlogPost(
