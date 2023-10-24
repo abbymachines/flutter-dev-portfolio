@@ -74,8 +74,9 @@ class _ItemState extends State<Item> {
         //   ),
         // ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            const SizedBox(
               width: 225,
               child: Card(
                 child: Column(
