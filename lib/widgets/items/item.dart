@@ -71,11 +71,6 @@ class _ItemState extends State<Item> {
                           const Spacer(),
                         ],
                       ),
-                      Image.asset(
-                        Images.sproutling,
-                        width: 50,
-                        height: 50,
-                      ),
                     ],
                   ),
                 ),
