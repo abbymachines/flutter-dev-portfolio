@@ -76,7 +76,12 @@ class _ItemState extends State<Item> {
         child: Row(
           children: [
             Card(
-              child: Text('hello Card inside of Row'),
+              child: Column(
+                children: [
+                  Text('hello Card row 2'),
+                  Text('hello Card row 1! AKA the top of the column'),
+                ],
+              ),
             ),
             Text('hello to you as well')
           ],
