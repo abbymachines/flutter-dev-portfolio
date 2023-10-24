@@ -77,7 +77,8 @@ class _ItemState extends State<Item> {
               ),
             ),
             // Text('hello to you as well')
-            Image.asset(Images.sproutling, width: 50, height: 50),
+            SizedBox(
+                width: 100, height: 100, child: Image.asset(Images.sproutling)),
           ],
         ));
   }
