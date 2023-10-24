@@ -33,46 +33,48 @@ class _ItemState extends State<Item> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: toggleExpanded,
-      child: Card(
-        color: widget.item.color,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                widget.item.label,
-                style: widget.item.style,
-                textAlign: TextAlign.left,
-              ),
-              Text(
-                widget.item.mainText,
-                style: const TextStyle(
-                    fontSize: 20,
-                    fontStyle: FontStyle.italic,
-                    color: Colors.white),
-              ),
-              const SizedBox(height: 4),
-              Row(
-                children: [
-                  Flexible(
-                    fit: FlexFit.loose,
-                    child: MarkdownBody(data: _expandedContent),
-                  ),
-                  const Spacer(),
-                ],
-              ),
-              Image.asset(
-                Images.sproutling,
-                width: 50,
-                height: 50,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+        onTap: toggleExpanded,
+        // child: Card(
+        //   color: widget.item.color,
+        //   child: Padding(
+        //     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        //     child: Column(
+        //       crossAxisAlignment: CrossAxisAlignment.start,
+        //       mainAxisSize: MainAxisSize.min,
+        //       children: [
+        //         Text(
+        //           widget.item.label,
+        //           style: widget.item.style,
+        //           textAlign: TextAlign.left,
+        //         ),
+        //         Text(
+        //           widget.item.mainText,
+        //           style: const TextStyle(
+        //               fontSize: 20,
+        //               fontStyle: FontStyle.italic,
+        //               color: Colors.white),
+        //         ),
+        //         const SizedBox(height: 4),
+        //         Row(
+        //           children: [
+        //             Flexible(
+        //               fit: FlexFit.loose,
+        //               child: MarkdownBody(data: _expandedContent),
+        //             ),
+        //             const Spacer(),
+        //           ],
+        //         ),
+        //         Image.asset(
+        //           Images.sproutling,
+        //           width: 50,
+        //           height: 50,
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // ),
+        child: Row(
+          children: [Text('hello Row'), Text('hello to you as well')],
+        ));
   }
 }
