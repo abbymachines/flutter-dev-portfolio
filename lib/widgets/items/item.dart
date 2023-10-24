@@ -73,21 +73,25 @@ class _ItemState extends State<Item> {
         //     ),
         //   ),
         // ),
-        child: const Row(
+        child: Row(
           children: [
-            Card(
-              child: Column(
-                children: [
-                  Text(
-                    'hello Card row 2',
-                  ),
-                  Text(
-                    'hello Card row 1! AKA the top of the column',
-                  ),
-                ],
+            Container(
+              width: 225,
+              child: Card(
+                child: Column(
+                  children: [
+                    Text(
+                      'hello Card row 2',
+                    ),
+                    Text(
+                      'hello Card row 1! AKA the top of the column',
+                    ),
+                  ],
+                ),
               ),
             ),
-            Text('hello to you as well')
+            // Text('hello to you as well')
+            Image.asset(Images.sproutling, width: 50, height: 50),
           ],
         ));
   }
