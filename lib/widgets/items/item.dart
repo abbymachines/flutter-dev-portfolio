@@ -73,13 +73,17 @@ class _ItemState extends State<Item> {
         //     ),
         //   ),
         // ),
-        child: Row(
+        child: const Row(
           children: [
             Card(
               child: Column(
                 children: [
-                  Text('hello Card row 2'),
-                  Text('hello Card row 1! AKA the top of the column'),
+                  Text(
+                    'hello Card row 2',
+                  ),
+                  Text(
+                    'hello Card row 1! AKA the top of the column',
+                  ),
                 ],
               ),
             ),
