@@ -14,16 +14,10 @@ class BlogPostItem extends StatelessWidget {
   Widget build(context) {
     return Item(
       GenericItem(
-        label: post.date,
-        mainText: post.blurb,
-        expandedText: post.body,
-        color: const Color.fromARGB(250, 213, 121, 255),
-        image: Image.asset(
-          Images.sproutling,
-          width: 5,
-          height: 5,
-        ),
-      ),
+          label: post.date,
+          mainText: post.blurb,
+          expandedText: post.body,
+          color: const Color.fromARGB(250, 213, 121, 255)),
     );
   }
 }

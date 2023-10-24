@@ -13,7 +13,7 @@ class GenericItem {
     required this.expandedText,
     this.color = const Color.fromARGB(255, 192, 192, 192),
     this.style = const TextStyle(fontSize: 22, fontWeight: FontWeight.normal),
-    required this.image,
+    this.image = 'sproutling',
   }) : key = uuid.v4();
 
   final String label;
@@ -22,5 +22,5 @@ class GenericItem {
   final Color? color;
   final TextStyle? style;
   final String key;
-  final Image image;
+  final String? image;
 }
