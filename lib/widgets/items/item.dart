@@ -32,54 +32,60 @@ class _ItemState extends State<Item> {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-        onTap: toggleExpanded,
-        // child:
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              width: 225,
-              child: Card(
-                color: widget.item.color,
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        widget.item.label,
-                        style: widget.item.style,
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        widget.item.mainText,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontStyle: FontStyle.italic,
-                            color: Colors.white),
-                      ),
-                      const SizedBox(height: 4),
-                      Row(
-                        children: [
-                          Flexible(
-                            fit: FlexFit.loose,
-                            child: MarkdownBody(data: _expandedContent),
-                          ),
-                          const Spacer(),
-                        ],
-                      ),
-                    ],
-                  ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(
+          width: 225,
+          child: InkWell(
+            onTap: toggleExpanded,
+            child: Card(
+              color: widget.item.color,
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      widget.item.label,
+                      style: widget.item.style,
+                      textAlign: TextAlign.left,
+                    ),
+                    Text(
+                      widget.item.mainText,
+                      style: const TextStyle(
+                          fontSize: 20,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.white),
+                    ),
+                    const SizedBox(height: 4),
+                    Row(
+                      children: [
+                        Flexible(
+                          fit: FlexFit.loose,
+                          child: MarkdownBody(data: _expandedContent),
+                        ),
+                        const Spacer(),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ),
-            // Text('hello to you as well')
-            SizedBox(
-                width: 100, height: 100, child: Image.asset(Images.sproutling)),
-          ],
-        ));
+          ),
+        ),
+        // Text('hello to you as well')
+        Container(
+          width: 100,
+          height: 100,
+          alignment: Alignment.bottomCenter,
+          child: Image.asset(
+            Images.sproutling,
+          ),
+        ),
+      ],
+    );
   }
 }

@@ -21,7 +21,10 @@ final items = [
 The app allows you to keep a list of habits and track their completion over time.
 
 When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.'''),
-  GenericItem(label: 'Simple Pet', expandedText: 'lol'),
+  GenericItem(
+      label: 'Simple Pet',
+      mainText: 'It\'s the little guy at the bottom of your screen!',
+      expandedText: 'A work in progress. I promise I\'m working on it.'),
   GenericItem(
       label: 'A (AR video series)',
       expandedText:
