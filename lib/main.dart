@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
             end: Alignment.bottomRight,
           )),
           // width: double.infinity,
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,

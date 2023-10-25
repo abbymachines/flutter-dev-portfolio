@@ -24,8 +24,13 @@ class _PetBoxState extends State<PetBox> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration:
-          const BoxDecoration(color: Color.fromARGB(255, 247, 233, 233)),
+      margin: EdgeInsets.all(0),
+      decoration: const BoxDecoration(
+        // borderRadius: BorderRadius.all(
+        //   Radius.circular(25),
+        // ),
+        color: Color.fromARGB(255, 247, 233, 233),
+      ),
       child: Row(
         children: [
           Text(_health.toString()),
