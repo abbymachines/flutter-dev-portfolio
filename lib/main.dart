@@ -60,14 +60,17 @@ class _MyAppState extends State<MyApp> {
             children: [
               _screenContent,
               PetBox(Pet(creature: 'sproutling')),
-              ButtonBar(
-                children: [
-                  TextButton(
-                      onPressed: setBlogScreen, child: const Text('BLOG')),
-                  TextButton(
-                      onPressed: setPortfolioScreen,
-                      child: const Text('PORTFOLIO'))
-                ],
+              Container(
+                decoration: BoxDecoration(color: Colors.lime),
+                child: ButtonBar(
+                  children: [
+                    TextButton(
+                        onPressed: setBlogScreen, child: const Text('BLOG')),
+                    TextButton(
+                        onPressed: setPortfolioScreen,
+                        child: const Text('PORTFOLIO'))
+                  ],
+                ),
               ),
             ],
           ),

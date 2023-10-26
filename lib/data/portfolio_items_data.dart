@@ -32,5 +32,7 @@ When habits are incomplete, the pet gets hungry and sick. Completing habits feed
   GenericItem(
       label: 'Skills',
       expandedText:
-          'Flutter / React / Kotlin(?) / Flask / SQL / REST APIs / full-stack development'),
+          '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs
+          
+focusing on full-stack web development and mobile app development'''),
 ];
