@@ -6,7 +6,7 @@ import 'package:flutter_dev_portfolio/constants/images.dart';
 final items = [
   GenericItem(
     label:
-        'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
+        'Hello! :) My name is *Abby Castillo*. I am a software developer and interdisciplinary artist based in Portland, OR.',
     mainText: "it's true i think!",
     expandedText:
         'I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know',

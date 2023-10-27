@@ -1,3 +1,5 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/generic_item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
@@ -50,15 +52,18 @@ class _ItemState extends State<Item> {
                   children: [
                     Text(
                       widget.item.label,
-                      style: widget.item.style,
+                      style: const TextStyle(
+                          fontSize: 21,
+                          fontFamily: 'Helvetica',
+                          fontWeight: FontWeight.w300),
                       textAlign: TextAlign.left,
                     ),
                     Text(
                       widget.item.mainText,
                       style: const TextStyle(
-                          fontSize: 20,
-                          fontStyle: FontStyle.italic,
-                          color: Colors.white),
+                          fontSize: 15,
+                          color: Colors.black,
+                          fontFamily: 'Consolas'),
                     ),
                     const SizedBox(height: 4),
                     Row(
