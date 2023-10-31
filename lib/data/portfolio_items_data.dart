@@ -5,6 +5,12 @@ import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final items = [
   GenericItem(
+      label: 'Skills',
+      mainText:
+          'focusing on full-stack web development and mobile app development',
+      expandedText:
+          '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs'''),
+  GenericItem(
     label:
         'Hello! :) My name is *Abby Castillo*. I am a software developer and interdisciplinary artist based in Portland, OR.',
     mainText: "it's true i think!",
@@ -29,10 +35,4 @@ When habits are incomplete, the pet gets hungry and sick. Completing habits feed
       label: 'A (AR video series)',
       expandedText:
           "'A' is a series of AR videos made with Meta Spark Studio."),
-  GenericItem(
-      label: 'Skills',
-      expandedText:
-          '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs
-          
-focusing on full-stack web development and mobile app development'''),
 ];

@@ -32,6 +32,7 @@ class _PetBoxState extends State<PetBox> {
         color: Color.fromARGB(255, 247, 233, 233),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(_health.toString()),
           Image.asset(
