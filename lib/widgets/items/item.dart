@@ -38,10 +38,10 @@ class _ItemState extends State<Item> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         SizedBox(
-          width: 225,
+          width: MediaQuery.of(context).size.width * .60,
           child: InkWell(
             onTap: toggleExpanded,
-            child: Card(
+            child: Container(
               color: widget.item.color,
               child: Padding(
                 padding:

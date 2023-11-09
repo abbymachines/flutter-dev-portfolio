@@ -5,12 +5,6 @@ import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final items = [
   GenericItem(
-      label: 'Skills',
-      mainText:
-          'focusing on full-stack web development and mobile app development',
-      expandedText:
-          '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs'''),
-  GenericItem(
     label:
         'Hello! :) My name is *Abby Castillo*. I am a software developer and interdisciplinary artist based in Portland, OR.',
     mainText: "it's true i think!",
@@ -19,6 +13,12 @@ final items = [
     color: const Color.fromARGB(255, 255, 195, 15),
     style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
   ),
+  GenericItem(
+      label: 'Skills',
+      mainText:
+          'focusing on full-stack web development and mobile app development',
+      expandedText:
+          '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs'''),
   GenericItem(
       label: 'Habit Pet',
       expandedText:
