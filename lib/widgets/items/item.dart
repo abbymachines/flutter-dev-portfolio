@@ -34,63 +34,81 @@ class _ItemState extends State<Item> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        SizedBox(
-          width: MediaQuery.of(context).size.width * .60,
-          child: InkWell(
-            onTap: toggleExpanded,
-            child: Container(
-              color: widget.item.color,
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      widget.item.label,
-                      style: const TextStyle(
-                          fontSize: 21,
-                          fontFamily: 'Helvetica',
-                          fontWeight: FontWeight.w300),
-                      textAlign: TextAlign.left,
-                    ),
-                    Text(
-                      widget.item.mainText,
-                      style: const TextStyle(
-                          fontSize: 15,
-                          color: Colors.black,
-                          fontFamily: 'Consolas'),
-                    ),
-                    const SizedBox(height: 4),
-                    Row(
-                      children: [
-                        Flexible(
-                          fit: FlexFit.loose,
-                          child: MarkdownBody(data: _expandedContent),
-                        ),
-                        const Spacer(),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
+    return Card(
+      child: Padding(
+        padding: EdgeInsets.only(top: 36.0, left: 6.0, right: 6.0, bottom: 6.0),
+        child: ExpansionTile(
+          title: Text('Birth of Universe'),
+          children: <Widget>[
+            Text(widget.item.label),
+            Text(widget.item.mainText),
+            Text(widget.item.expandedText),
+          ],
         ),
-        // Text('hello to you as well')
-        Container(
-          width: 100,
-          height: 100,
-          alignment: Alignment.bottomCenter,
-          child: Image.asset(
-            Images.sproutling,
-          ),
-        ),
-      ],
+      ),
     );
+    // return Column(
+    //   children: [
+    //     Row(
+    //       mainAxisAlignment: MainAxisAlignment.center,
+    //       children: [
+    //         SizedBox(
+    //           width: MediaQuery.of(context).size.width * .60,
+    //           child: InkWell(
+    //             onTap: toggleExpanded,
+    //             child: Container(
+    //               color: widget.item.color,
+    //               child: Padding(
+    //                 padding: const EdgeInsets.symmetric(
+    //                     horizontal: 20, vertical: 16),
+    //                 child: Column(
+    //                   crossAxisAlignment: CrossAxisAlignment.start,
+    //                   mainAxisSize: MainAxisSize.min,
+    //                   children: [
+    //                     Text(
+    //                       widget.item.label,
+    //                       style: const TextStyle(
+    //                           fontSize: 21,
+    //                           fontFamily: 'Helvetica',
+    //                           fontWeight: FontWeight.w300),
+    //                       textAlign: TextAlign.left,
+    //                     ),
+    //                     Text(
+    //                       widget.item.mainText,
+    //                       style: const TextStyle(
+    //                           fontSize: 15,
+    //                           color: Colors.black,
+    //                           fontFamily: 'Consolas'),
+    //                     ),
+    //                     const SizedBox(height: 4),
+    //                     Row(
+    //                       children: [
+    //                         Flexible(
+    //                           fit: FlexFit.loose,
+    //                           child: MarkdownBody(data: _expandedContent),
+    //                         ),
+    //                         const Spacer(),
+    //                       ],
+    //                     ),
+    //                   ],
+    //                 ),
+    //               ),
+    //             ),
+    //           ),
+    //         ),
+    //         // Text('hello to you as well')
+    //         Container(
+    //           width: 100,
+    //           height: 100,
+    //           alignment: Alignment.bottomCenter,
+    //           child: Image.asset(
+    //             Images.sproutling,
+    //           ),
+    //         ),
+    //       ],
+    //     ),
+    //     // SizedBox(height: 10),
+    //   ],
+    // );
   }
 }

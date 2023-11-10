@@ -40,7 +40,13 @@ class _MyAppState extends State<MyApp> {
       title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
-        appBar: AppBar(title: const Text("Abby Castillo [dot] Dev")),
+        appBar: AppBar(
+          title: const Text(
+            "Abby Castillo [dot] Dev",
+            style: TextStyle(fontSize: 10),
+          ),
+          toolbarHeight: 30,
+        ),
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
