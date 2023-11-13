@@ -34,16 +34,31 @@ class _ItemState extends State<Item> {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: EdgeInsets.only(top: 36.0, left: 6.0, right: 6.0, bottom: 6.0),
-        child: ExpansionTile(
-          title: Text('Birth of Universe'),
-          children: <Widget>[
-            Text(widget.item.label),
-            Text(widget.item.mainText),
-            Text(widget.item.expandedText),
-          ],
+    return SizedBox(
+      width: MediaQuery.of(context).size.width * .6,
+      child: Center(
+        child: Card(
+          elevation: 10,
+          child: Padding(
+            padding: const EdgeInsets.only(
+                top: 6.0, left: 6.0, right: 6.0, bottom: 6.0),
+            child: ExpansionTile(
+              title: Text(widget.item.label),
+              children: <Widget>[
+                MarkdownBody(data: widget.item.label),
+                Text(widget.item.mainText),
+                Text(widget.item.expandedText),
+              ],
+            ),
+          ),
+          // child: ExpansionTile(
+          //   title: Text(widget.item.label),
+          //   children: <Widget>[
+          //     MarkdownBody(data: widget.item.label),
+          //     Text(widget.item.mainText),
+          //     Text(widget.item.expandedText),
+          //   ],
+          // ),
         ),
       ),
     );
