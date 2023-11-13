@@ -43,11 +43,11 @@ class _ItemState extends State<Item> {
             padding: const EdgeInsets.only(
                 top: 6.0, left: 6.0, right: 6.0, bottom: 6.0),
             child: ExpansionTile(
-              title: Text(widget.item.label),
+              title: MarkdownBody(data: widget.item.label),
               children: <Widget>[
                 MarkdownBody(data: widget.item.label),
-                Text(widget.item.mainText),
-                Text(widget.item.expandedText),
+                MarkdownBody(data: widget.item.mainText),
+                MarkdownBody(data: widget.item.expandedText),
               ],
             ),
           ),
