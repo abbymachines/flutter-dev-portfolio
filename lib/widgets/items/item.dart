@@ -34,30 +34,47 @@ class _ItemState extends State<Item> {
 
   @override
   Widget build(BuildContext context) {
-    const double padding = 10;
+    const int padding = 5;
 
     return SizedBox(
-      width: MediaQuery.of(context).size.width * .6,
-      child: Card(
-        elevation: 10,
-        child: Padding(
-          padding: const EdgeInsets.all(padding),
-          child: ExpansionTile(
-            shape: OvalBorder(eccentricity: .5),
-            title: Text(
-              widget.item.label,
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            expandedAlignment: Alignment.topLeft,
-            children: <Widget>[
-              // MarkdownBody(data: widget.item.mainText),
-              Padding(
-                padding: const EdgeInsets.all(padding),
-                child: MarkdownBody(data: widget.item.expandedText),
+      // width: MediaQuery.of(context).size.width * .6,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width * .4,
+            child: Card(
+              elevation: 10,
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: ExpansionTile(
+                  trailing: Container(
+                    child: Text('image go here?'),
+                  ),
+                  shape: OvalBorder(eccentricity: .5),
+                  title: Text(
+                    widget.item.label,
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  expandedAlignment: Alignment.topLeft,
+                  children: <Widget>[
+                    // MarkdownBody(data: widget.item.mainText),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: MarkdownBody(data: widget.item.expandedText),
+                    ),
+                  ],
+                ),
               ),
-            ],
+            ),
           ),
-        ),
+          // Container(
+          //   width: MediaQuery.of(context).size.width * .2,
+          //   height: 50,
+          //   alignment: AlignmentDirectional.topStart,
+          //   child: Text('image go here'),
+          // ),
+        ],
       ),
     );
     // return Column(

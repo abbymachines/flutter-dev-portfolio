@@ -14,7 +14,7 @@ class ItemList extends StatelessWidget {
   @override
   Widget build(context) {
     return Expanded(
-      child: SizedBox(
+      child: Container(
         width: MediaQuery.of(context).size.width * .6,
         child: ListView.builder(
           itemCount: items.length,
