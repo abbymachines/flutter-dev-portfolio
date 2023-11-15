@@ -42,14 +42,16 @@ class _ItemState extends State<Item> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            width: MediaQuery.of(context).size.width * .4,
+            width: MediaQuery.of(context).size.width * .6,
             child: Card(
               elevation: 10,
               child: Padding(
                 padding: const EdgeInsets.all(10),
                 child: ExpansionTile(
                   trailing: Container(
-                    child: Text('image go here?'),
+                    child: Image.asset(
+                      Images.sproutling,
+                    ),
                   ),
                   shape: OvalBorder(eccentricity: .5),
                   title: Text(
@@ -68,12 +70,12 @@ class _ItemState extends State<Item> {
               ),
             ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width * .2,
-            height: 50,
-            alignment: AlignmentDirectional.topStart,
-            child: Text('or should it go here?'),
-          ),
+          // Container(
+          //   width: MediaQuery.of(context).size.width * .2,
+          //   height: 50,
+          //   alignment: AlignmentDirectional.topStart,
+          //   child: Text('or should it go here?'),
+          // ),
         ],
       ),
     );
