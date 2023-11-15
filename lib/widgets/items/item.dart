@@ -42,7 +42,11 @@ class _ItemState extends State<Item> {
           padding: const EdgeInsets.only(
               top: 6.0, left: 6.0, right: 6.0, bottom: 6.0),
           child: ExpansionTile(
-            title: MarkdownBody(data: widget.item.label),
+            shape: OvalBorder(eccentricity: .5),
+            title: Text(
+              widget.item.label,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             expandedAlignment: Alignment.topLeft,
             children: <Widget>[
               // MarkdownBody(data: widget.item.mainText),
