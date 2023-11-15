@@ -68,12 +68,12 @@ class _ItemState extends State<Item> {
               ),
             ),
           ),
-          // Container(
-          //   width: MediaQuery.of(context).size.width * .2,
-          //   height: 50,
-          //   alignment: AlignmentDirectional.topStart,
-          //   child: Text('image go here'),
-          // ),
+          Container(
+            width: MediaQuery.of(context).size.width * .2,
+            height: 50,
+            alignment: AlignmentDirectional.topStart,
+            child: Text('or should it go here?'),
+          ),
         ],
       ),
     );
