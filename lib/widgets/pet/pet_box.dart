@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 import 'package:flutter_dev_portfolio/models/pet.dart';
 import 'package:flutter_dev_portfolio/constants/images.dart';
+import 'package:flutter_dev_portfolio/data/simple_pet_speech.dart';
 
 class PetBox extends StatefulWidget {
   const PetBox(this.pet, {super.key});
@@ -14,6 +16,9 @@ class PetBox extends StatefulWidget {
 
 class _PetBoxState extends State<PetBox> {
   var _health = 0;
+  var _speech = 'welcome to abbymachines dot dev 🥰 i sure am hungry 😬';
+  var _speechIndex = 0;
+  final dialoguesLength = petDialogues.length;
 
   void increaseHealth() {
     setState(() {
@@ -21,8 +26,16 @@ class _PetBoxState extends State<PetBox> {
     });
   }
 
+  void selectSpeech() {
+    setState(() {
+      _speechIndex = Random().nextInt(dialoguesLength);
+      _speech = widget.pet.dialogues[_speechIndex];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    // final speechLength = widget.pet.dialogues;
     return Container(
       margin: EdgeInsets.all(0),
       decoration: const BoxDecoration(
@@ -41,9 +54,9 @@ class _PetBoxState extends State<PetBox> {
             height: 70,
           ),
           Text(
-            'it\'s me, the ${widget.pet.creature}!',
+            _speech,
           ),
-          TextButton(onPressed: increaseHealth, child: const Text('feed me')),
+          TextButton(onPressed: selectSpeech, child: const Text('feed me')),
         ],
       ),
     );

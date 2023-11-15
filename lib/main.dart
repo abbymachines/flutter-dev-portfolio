@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_portfolio/data/simple_pet_speech.dart';
 
 import 'package:flutter_dev_portfolio/models/blog.dart';
 import 'package:flutter_dev_portfolio/data/blog_posts.dart';
@@ -65,7 +66,7 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               _screenContent,
-              PetBox(Pet(creature: 'sproutling')),
+              PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
               Container(
                 decoration: BoxDecoration(color: Colors.lime),
                 child: ButtonBar(
