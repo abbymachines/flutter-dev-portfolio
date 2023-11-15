@@ -20,19 +20,22 @@ final items = [
       expandedText:
           '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs'''),
   GenericItem(
-      label: 'Habit Pet',
+      label: 'A (AR video series)',
       expandedText:
-          ''''**Wurm** is a habit tracker attached to a tamagotchi-style virtual pet. Currently in development using Flutter for Android, iOS, and the web.
+          "'A' is a series of AR videos made with Meta Spark Studio."),
+  GenericItem(
+      label: 'Tama Habits',
+      expandedText:
+          ''''**Tama Habits** is a habit tracker attached to a tamagotchi-style virtual pet. Currently in development using Flutter for Android, iOS, and the web.
 
 The app allows you to keep a list of habits and track their completion over time.
 
-When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.'''),
+When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.
+
+A demo of this app will be available soon (November 2023) on this website as **Tama To-Do**. This demo will include limited features, functioning as a to-do list instead of a habit tracker.
+'''),
   GenericItem(
       label: 'Simple Pet',
       mainText: 'It\'s the little guy at the bottom of your screen!',
       expandedText: 'A work in progress. I promise I\'m working on it.'),
-  GenericItem(
-      label: 'A (AR video series)',
-      expandedText:
-          "'A' is a series of AR videos made with Meta Spark Studio."),
 ];
