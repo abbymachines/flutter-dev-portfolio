@@ -34,13 +34,14 @@ class _ItemState extends State<Item> {
 
   @override
   Widget build(BuildContext context) {
+    const double padding = 10;
+
     return SizedBox(
       width: MediaQuery.of(context).size.width * .6,
       child: Card(
         elevation: 10,
         child: Padding(
-          padding: const EdgeInsets.only(
-              top: 6.0, left: 6.0, right: 6.0, bottom: 6.0),
+          padding: const EdgeInsets.all(padding),
           child: ExpansionTile(
             shape: OvalBorder(eccentricity: .5),
             title: Text(
@@ -50,7 +51,10 @@ class _ItemState extends State<Item> {
             expandedAlignment: Alignment.topLeft,
             children: <Widget>[
               // MarkdownBody(data: widget.item.mainText),
-              MarkdownBody(data: widget.item.expandedText),
+              Padding(
+                padding: const EdgeInsets.all(padding),
+                child: MarkdownBody(data: widget.item.expandedText),
+              ),
             ],
           ),
         ),
