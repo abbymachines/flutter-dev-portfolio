@@ -5,13 +5,15 @@ import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final items = [
   GenericItem(
-    label:
-        'Hello! :) My name is Abby Castillo. I am a software developer and interdisciplinary artist based in Portland, OR.',
+    label: 'Hello! :) My name is Abby Castillo.',
     mainText: "it's true i think!",
     expandedText:
-        'I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know',
+        '''I am a software developer and interdisciplinary artist based in Portland, OR.
+        
+I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know''',
     color: const Color.fromARGB(255, 255, 195, 15),
     style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+    image: 'iconA0Small',
   ),
   GenericItem(
       label: 'Skills',
@@ -35,7 +37,16 @@ When habits are incomplete, the pet gets hungry and sick. Completing habits feed
 A demo of this app will be available soon (November 2023) on this website as **Tama To-Do**. This demo will include limited features, functioning as a to-do list instead of a habit tracker.
 '''),
   GenericItem(
-      label: 'Simple Pet',
+      label: 'AbbyCastillo.dev',
       mainText: 'It\'s the little guy at the bottom of your screen!',
       expandedText: 'A work in progress. I promise I\'m working on it.'),
+  GenericItem(
+    label: 'Education',
+    expandedText: '''Ada Developers Academy
+
+Portland Community College
+
+Reed College
+''',
+  )
 ];

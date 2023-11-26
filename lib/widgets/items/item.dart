@@ -50,7 +50,7 @@ class _ItemState extends State<Item> {
                 child: ExpansionTile(
                   trailing: Container(
                     child: Image.asset(
-                      Images.sproutling,
+                      widget.item.image,
                     ),
                   ),
                   shape: OvalBorder(eccentricity: .5),
