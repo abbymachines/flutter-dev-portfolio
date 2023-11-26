@@ -63,7 +63,10 @@ class _ItemState extends State<Item> {
                     // MarkdownBody(data: widget.item.mainText),
                     Padding(
                       padding: const EdgeInsets.all(10),
-                      child: MarkdownBody(data: widget.item.expandedText),
+                      child: MarkdownBody(
+                        data: widget.item.expandedText,
+                        selectable: true,
+                      ),
                     ),
                   ],
                 ),
