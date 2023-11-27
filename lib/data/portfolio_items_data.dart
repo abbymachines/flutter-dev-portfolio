@@ -7,10 +7,10 @@ final items = [
   GenericItem(
     label: 'Hello! :) My name is Abby Castillo.',
     mainText: "it's true i think!",
-    expandedText:
-        '''I am a software developer and interdisciplinary artist based in Portland, OR.
+    expandedText: '''
+  I am a software developer and interdisciplinary artist based in Portland, OR.
         
-I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know''',
+  I have several websites you can look at and also I have a linkedin and such. Lorem ipso facto badabing badaboom and etcetera as you know''',
     color: const Color.fromARGB(255, 255, 195, 15),
     style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
     image: Images.iconA0Small,

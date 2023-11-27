@@ -41,13 +41,13 @@ class _MyAppState extends State<MyApp> {
       title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            "Abby Castillo [dot] Dev",
-            style: TextStyle(fontSize: 10),
-          ),
-          toolbarHeight: 30,
-        ),
+        // appBar: AppBar(
+        //   title: const Text(
+        //     "Abby Castillo [dot] Dev",
+        //     style: TextStyle(fontSize: 10),
+        //   ),
+        //   toolbarHeight: 30,
+        // ),
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               _screenContent,
-              PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
+              // PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
               Container(
                 decoration: BoxDecoration(color: Colors.lime),
                 child: ButtonBar(
