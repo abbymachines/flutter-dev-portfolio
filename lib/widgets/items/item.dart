@@ -44,6 +44,7 @@ class _ItemState extends State<Item> {
           Container(
             width: MediaQuery.of(context).size.width * .6,
             child: Card(
+              color: widget.item.color,
               elevation: 10,
               child: Padding(
                 padding: const EdgeInsets.all(10),
