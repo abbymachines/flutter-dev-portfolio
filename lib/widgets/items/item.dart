@@ -55,9 +55,19 @@ class _ItemState extends State<Item> {
                     ),
                   ),
                   shape: OvalBorder(eccentricity: .5),
-                  title: Text(
-                    widget.item.label,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                  title: Row(
+                    children: [
+                      Text('>>>'),
+                      // ExpandIcon(
+                      //   onPressed: ()(
+                      //     print('lol'),
+                      //   ),
+                      // ),
+                      Text(
+                        widget.item.label,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
                   expandedAlignment: Alignment.topLeft,
                   children: <Widget>[

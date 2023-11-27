@@ -19,8 +19,56 @@ final items = [
       label: 'Skills',
       mainText:
           'focusing on full-stack web development and mobile app development',
-      expandedText:
-          '''Python / Dart / JavaScript / Flutter / React / SQL / Firebase / REST APIs'''),
+      expandedText: '''
+*LANGUAGES*:
+
+  • Python
+
+  • Dart
+
+  • JavaScript
+
+  • SQL
+
+  • Dart
+
+  • Java
+
+  • Max MSP
+
+  • Processing
+  
+  • P5
+          
+*FRONT-END*: 
+
+• React.js
+
+• HTML
+
+• CSS
+
+• Flutter
+          
+*OTHER SKILLS*:
+
+• REST APIs
+
+• git
+
+• CRM databases
+
+• app deployment
+
+• data analysis
+
+• database design
+
+• test-driven development
+
+• jupyter notebooks
+
+• graphic design (Adobe Photoshop/Illustrator, Affinity Suite, Figma)'''),
   GenericItem(
       label: 'A (AR video series)',
       expandedText:
@@ -40,6 +88,9 @@ A demo of this app will be available soon (November 2023) on this website as **T
       label: 'AbbyCastillo.dev',
       mainText: 'It\'s the little guy at the bottom of your screen!',
       expandedText: 'A work in progress. I promise I\'m working on it.'),
+  GenericItem(
+      label: 'The Extent of Our Knowledge',
+      expandedText: 'Data visualization made with MAX M/S/P.'),
   GenericItem(
     label: 'Education',
     expandedText: '''Ada Developers Academy
