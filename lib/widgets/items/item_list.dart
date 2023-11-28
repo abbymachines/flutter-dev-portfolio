@@ -23,40 +23,48 @@ class ItemList extends StatelessWidget {
           },
           itemBuilder: (ctx, index) =>
               // Item(key: ValueKey(items[index]), items[index]),
-              ExpansionTile(
-            onExpansionChanged: (expanded) {
-              if (expanded) {
-                expandedIndices.add(index);
-              } else {
-                expandedIndices.remove(index);
-              }
-            },
-            initiallyExpanded: expandedIndices.contains(index),
-            controlAffinity: ListTileControlAffinity.leading,
-            trailing: Container(
-              child: Image.asset(
-                items[index].image,
+              Card(
+            color: items[index].color,
+            elevation: 10,
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: ExpansionTile(
+                maintainState: true,
+                onExpansionChanged: (expanded) {
+                  if (expanded) {
+                    expandedIndices.add(index);
+                  } else {
+                    expandedIndices.remove(index);
+                  }
+                },
+                initiallyExpanded: expandedIndices.contains(index),
+                controlAffinity: ListTileControlAffinity.leading,
+                trailing: Container(
+                  child: Image.asset(
+                    items[index].image,
+                  ),
+                ),
+                shape: OvalBorder(eccentricity: .5),
+                title: Row(
+                  children: [
+                    Text(
+                      items[index].label,
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                expandedAlignment: Alignment.topLeft,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: MarkdownBody(
+                      data: items[index].expandedText,
+                      selectable: true,
+                    ),
+                  ),
+                ],
               ),
             ),
-            shape: OvalBorder(eccentricity: .5),
-            title: Row(
-              children: [
-                Text(
-                  items[index].label,
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            expandedAlignment: Alignment.topLeft,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(10),
-                child: MarkdownBody(
-                  data: items[index].expandedText,
-                  selectable: true,
-                ),
-              ),
-            ],
           ),
         ),
       ),
