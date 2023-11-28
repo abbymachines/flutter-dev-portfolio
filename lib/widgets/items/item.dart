@@ -16,18 +16,30 @@ class Item extends StatefulWidget {
 
 class _ItemState extends State<Item> {
   var _isExpanded = false;
-  var _expandedContent = '';
+  // var _expandedContent = '';
 
-  void toggleExpanded() {
-    if (_isExpanded == false) {
+  // void toggleExpanded() {
+  //   if (_isExpanded == false) {
+  //     setState(() {
+  //       _isExpanded = true;
+  //       _expandedContent = widget.item.expandedText;
+  //     });
+  //   } else {
+  //     setState(() {
+  //       _isExpanded = false;
+  //       _expandedContent = '';
+  //     });
+  //   }
+  // }
+
+  void toggleExpanded(bool) {
+    if (bool == true) {
       setState(() {
-        _isExpanded = true;
-        _expandedContent = widget.item.expandedText;
+        _isExpanded = false;
       });
     } else {
       setState(() {
-        _isExpanded = false;
-        _expandedContent = '';
+        _isExpanded = true;
       });
     }
   }
@@ -47,13 +59,10 @@ class _ItemState extends State<Item> {
             child: Padding(
               padding: const EdgeInsets.all(10),
               child: ExpansionTile(
+                initiallyExpanded: _isExpanded,
+                onExpansionChanged: toggleExpanded,
                 maintainState: true,
-                key: PageStorageKey(widget.item.key.toString()),
-                // leading: CircleAvatar(
-                //   child: Image.asset(
-                //     widget.item.image,
-                //   )
-                // ),
+                // key: PageStorageKey(widget.item.key.toString()),
                 controlAffinity: ListTileControlAffinity.leading,
                 trailing: Container(
                   child: Image.asset(
