@@ -16,8 +16,12 @@ class ItemList extends StatelessWidget {
     return Expanded(
       child: Container(
         width: MediaQuery.of(context).size.width * .6,
-        child: ListView.builder(
+        child: ListView.separated(
           itemCount: items.length,
+          shrinkWrap: true,
+          separatorBuilder: (ctx, index) {
+            return const SizedBox(height: 20);
+          },
           itemBuilder: (ctx, index) =>
               Item(key: ValueKey(items[index]), items[index]),
         ),

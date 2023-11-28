@@ -36,65 +36,61 @@ class _ItemState extends State<Item> {
   Widget build(BuildContext context) {
     const int padding = 5;
 
-    return SizedBox(
-      // width: MediaQuery.of(context).size.width * .6,
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            width: MediaQuery.of(context).size.width * .6,
-            child: Card(
-              color: widget.item.color,
-              elevation: 10,
-              child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: ExpansionTile(
-                  leading: const CircleAvatar(
-                    child: Icon(Icons.abc),
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          width: MediaQuery.of(context).size.width * .6,
+          child: Card(
+            color: widget.item.color,
+            elevation: 10,
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: ExpansionTile(
+                maintainState: true,
+                key: PageStorageKey(widget.item.key.toString()),
+                // leading: CircleAvatar(
+                //   child: Image.asset(
+                //     widget.item.image,
+                //   )
+                // ),
+                controlAffinity: ListTileControlAffinity.leading,
+                trailing: Container(
+                  child: Image.asset(
+                    widget.item.image,
                   ),
-                  trailing: Container(
-                    child: Image.asset(
-                      widget.item.image,
-                    ),
-                  ),
-                  shape: OvalBorder(eccentricity: .5),
-                  title: Row(
-                    children: [
-                      Text('>>>'),
-                      // ExpandIcon(
-                      //   onPressed: ()(
-                      //     print('lol'),
-                      //   ),
-                      // ),
-                      Text(
-                        widget.item.label,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                  expandedAlignment: Alignment.topLeft,
-                  children: <Widget>[
-                    // MarkdownBody(data: widget.item.mainText),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: MarkdownBody(
-                        data: widget.item.expandedText,
-                        selectable: true,
-                      ),
+                ),
+                shape: OvalBorder(eccentricity: .5),
+                title: Row(
+                  children: [
+                    Text(
+                      widget.item.label,
+                      style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
+                expandedAlignment: Alignment.topLeft,
+                children: <Widget>[
+                  // MarkdownBody(data: widget.item.mainText),
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: MarkdownBody(
+                      data: widget.item.expandedText,
+                      selectable: true,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
-          // Container(
-          //   width: MediaQuery.of(context).size.width * .2,
-          //   height: 50,
-          //   alignment: AlignmentDirectional.topStart,
-          //   child: Text('or should it go here?'),
-          // ),
-        ],
-      ),
+        ),
+        // Container(
+        //   width: MediaQuery.of(context).size.width * .2,
+        //   height: 50,
+        //   alignment: AlignmentDirectional.topStart,
+        //   child: Text('or should it go here?'),
+        // ),
+      ],
     );
     // return Column(
     //   children: [
