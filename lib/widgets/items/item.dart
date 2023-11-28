@@ -49,6 +49,9 @@ class _ItemState extends State<Item> {
               child: Padding(
                 padding: const EdgeInsets.all(10),
                 child: ExpansionTile(
+                  leading: const CircleAvatar(
+                    child: Icon(Icons.abc),
+                  ),
                   trailing: Container(
                     child: Image.asset(
                       widget.item.image,

@@ -8,6 +8,7 @@ import 'package:flutter_dev_portfolio/widgets/blog/blog_column.dart';
 import 'package:flutter_dev_portfolio/widgets/items/item_list.dart';
 import 'package:flutter_dev_portfolio/widgets/pet/pet_box.dart';
 import 'package:flutter_dev_portfolio/models/pet.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 
 void main() {
   runApp(const MyApp());
@@ -65,6 +66,15 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              //             Markdown(data: """
+              // # This is a Heading 1
+              // ## This is a Heading 2
+              // This is a paragraph with some *italic* and **bold** text.
+              // - This is a bullet point
+              // - Another bullet point
+              // 1. This is a numbered list
+              // 2. Another numbered item
+              // """),
               _screenContent,
               // PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
               Container(
