@@ -6,7 +6,14 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import '../../../data/portfolio_items_data.dart';
 
 class ItemList extends StatelessWidget {
-  const ItemList({super.key});
+  const ItemList(
+      {
+      //   required this.onExpansionChanged,
+      // required this.expandedIndices,
+      super.key});
+
+  // final Function onExpansionChanged;
+  // final List expandedIndices;
 
   @override
   Widget build(context) {
@@ -49,7 +56,7 @@ class ItemList extends StatelessWidget {
                   children: [
                     Text(
                       items[index].label,
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -61,7 +68,18 @@ class ItemList extends StatelessWidget {
                       data: items[index].expandedText,
                       selectable: true,
                     ),
+                    // child: RichText(
+                    // text: TextSpan(
+                    //     text: 'Hello',
+                    //     style: DefaultTextStyle.of(context).style,
+                    //     children: const <TextSpan>[
+                    //       TextSpan(
+                    //           text: 'bold',
+                    //           style: TextStyle(fontWeight: FontWeight.bold)),
+                    //       TextSpan(text: 'world!'),
+                    //     ]),
                   ),
+                  // ),
                 ],
               ),
             ),

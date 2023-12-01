@@ -23,6 +23,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   dynamic _screenContent = ItemList();
+  List _itemListExpandedIndices = [];
 
   void setBlogScreen() {
     setState(() {
@@ -35,6 +36,12 @@ class _MyAppState extends State<MyApp> {
       _screenContent = ItemList();
     });
   }
+
+  // void onExpandItemListCard(expanded) {
+  //   if (expanded) {
+
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {

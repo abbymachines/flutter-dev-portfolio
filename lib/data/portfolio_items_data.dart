@@ -71,7 +71,8 @@ final items = [
   GenericItem(
       label: 'A (AR video series)',
       expandedText:
-          "'A' is a series of AR videos made with Meta Spark Studio. Part of a 2023 Precipice Fund grant. Videos online at [TikTok](https://www.tiktok.com/@abbymachines)."),
+          "'A' is a series of AR videos made with Meta Spark Studio. Part of a 2023 Precipice Fund grant. Videos online at [TikTok](https://www.tiktok.com/@abbymachines).",
+      color: Color.fromARGB(255, 255, 252, 252)),
   GenericItem(
       label: 'Tama Habits',
       expandedText:
@@ -82,16 +83,19 @@ The app allows you to keep a list of habits and track their completion over time
 When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.
 
 A public demo of this app will be available soon (November 2023) on this website as **Tama To-Do**. This demo will include limited features, functioning as a to-do list instead of a habit tracker.
-'''),
+''',
+      color: const Color.fromARGB(255, 255, 252, 252)),
   GenericItem(
       label: 'AbbyCastillo.dev',
       mainText: 'It\'s the little guy at the bottom of your screen!',
       expandedText:
-          'The website you are currently visiting. :) Developed in **Flutter** and **Dart** for **web browsers**.'),
+          'The website you are currently visiting. :) Developed in **Flutter** and **Dart** for **web browsers**.',
+      color: const Color.fromARGB(255, 255, 252, 252)),
   GenericItem(
       label: 'The Extent of Our Knowledge',
       expandedText:
-          'Data visualization/sonification made with MAX M/S/P. Created as a project during the Creative Coding & Immersive Technologies program at Portland Community College.'),
+          'Data visualization/sonification made with MAX M/S/P. Created as a project during the Creative Coding & Immersive Technologies program at Portland Community College.',
+      color: const Color.fromARGB(255, 255, 252, 252)),
   GenericItem(
     label: 'Education',
     expandedText: '''**Ada Developers Academy**, full-stack web development
