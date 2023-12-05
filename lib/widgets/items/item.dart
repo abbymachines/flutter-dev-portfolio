@@ -96,6 +96,7 @@ class _ItemState extends State<Item> {
                       onTapLink: (text, href, title) {
                         href != null ? launchUrlString(href) : null;
                       },
+                      selectable: true,
                     ),
                   ),
                 ],

@@ -59,9 +59,16 @@ class ItemList extends StatelessWidget {
                 shape: OvalBorder(eccentricity: .5),
                 title: Row(
                   children: [
-                    Text(
-                      items[index].label,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    Flexible(
+                      child: Text(
+                        // items[index].label
+                        'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          // overflow: TextOverflow.fade
+                        ),
+                        // overflow: TextOverflow.clip,
+                      ),
                     ),
                   ],
                 ),
