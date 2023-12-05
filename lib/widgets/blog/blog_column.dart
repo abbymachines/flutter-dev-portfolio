@@ -19,7 +19,7 @@ class BlogColumn extends StatelessWidget {
       //       key: ValueKey(blogPostData[index]), blogPostData[index]),
       // ),
       child: SizedBox(
-        width: MediaQuery.of(context).size.width * .6,
+        width: MediaQuery.of(context).size.width * .9,
         child: ListView.builder(
           itemCount: blogPostData.length,
           itemBuilder: (ctx, index) => BlogPostItem(

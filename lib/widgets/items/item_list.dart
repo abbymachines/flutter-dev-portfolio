@@ -21,7 +21,7 @@ class ItemList extends StatelessWidget {
   @override
   Widget build(context) {
     List expandedIndices = [];
-    double width = MediaQuery.of(context).size.width * .6;
+    double width = MediaQuery.of(context).size.width * .9;
 
     return Expanded(
       child: Container(

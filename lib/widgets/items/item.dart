@@ -57,7 +57,8 @@ class _ItemState extends State<Item> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Container(
-          width: MediaQuery.of(context).size.width * .6,
+          // screenWidth = MediaQuery.of(context).size.width * .0
+          width: MediaQuery.of(context).size.width * .9,
           // width: widget.width,
           child: Card(
             color: widget.item.color,
