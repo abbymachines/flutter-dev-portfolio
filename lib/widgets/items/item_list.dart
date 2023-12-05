@@ -4,23 +4,28 @@ import 'package:flutter_dev_portfolio/widgets/items/item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 // import 'package:flutter_dev_portfolio/models/portfolio.dart';
 import '../../../data/portfolio_items_data.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class ItemList extends StatelessWidget {
   const ItemList(
       {
       //   required this.onExpansionChanged,
       // required this.expandedIndices,
+      // required this.width,
       super.key});
 
   // final Function onExpansionChanged;
   // final List expandedIndices;
+  // final double width;
 
   @override
   Widget build(context) {
     List expandedIndices = [];
+    double width = MediaQuery.of(context).size.width * .6;
+
     return Expanded(
       child: Container(
-        width: MediaQuery.of(context).size.width * .6,
+        width: width,
         child: ListView.separated(
           // physics: ClampingScrollPhysics(),
           itemCount: items.length,
@@ -67,6 +72,9 @@ class ItemList extends StatelessWidget {
                     child: MarkdownBody(
                       data: items[index].expandedText,
                       selectable: true,
+                      onTapLink: (text, href, title) {
+                        href != null ? launchUrlString(href) : null;
+                      },
                     ),
                     // child: RichText(
                     // text: TextSpan(

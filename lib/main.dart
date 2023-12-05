@@ -35,16 +35,17 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _screenContent = ItemList();
     });
+
+    // void onExpandItemListCard(expanded) {
+    //   if (expanded) {
+
+    //   }
   }
-
-  // void onExpandItemListCard(expanded) {
-  //   if (expanded) {
-
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {
+    // final width = MediaQuery.of(context).size.width * .6;
+
     return MaterialApp(
       title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),

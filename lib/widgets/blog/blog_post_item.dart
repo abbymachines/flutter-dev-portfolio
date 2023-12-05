@@ -17,7 +17,7 @@ class BlogPostItem extends StatelessWidget {
           label: post.date,
           mainText: post.blurb,
           expandedText: post.body,
-          color: const Color.fromARGB(250, 213, 121, 255)),
+          color: Color.fromARGB(248, 203, 165, 139)),
     );
   }
 }

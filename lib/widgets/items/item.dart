@@ -4,11 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/generic_item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_dev_portfolio/constants/images.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class Item extends StatefulWidget {
-  const Item(this.item, {super.key});
+  const Item(this.item,
+      // this.width,
+      {super.key});
 
   final GenericItem item;
+  // final double width;
 
   @override
   State<Item> createState() => _ItemState();
@@ -53,6 +58,7 @@ class _ItemState extends State<Item> {
       children: [
         Container(
           width: MediaQuery.of(context).size.width * .6,
+          // width: widget.width,
           child: Card(
             color: widget.item.color,
             elevation: 10,
@@ -85,7 +91,10 @@ class _ItemState extends State<Item> {
                     padding: const EdgeInsets.all(10),
                     child: MarkdownBody(
                       data: widget.item.expandedText,
-                      selectable: true,
+                      // selectable: true,
+                      onTapLink: (text, href, title) {
+                        href != null ? launchUrlString(href) : null;
+                      },
                     ),
                   ),
                 ],
