@@ -61,8 +61,8 @@ class ItemList extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Text(
-                        // items[index].label
-                        'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
+                        items[index].label,
+                        // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           // overflow: TextOverflow.fade
