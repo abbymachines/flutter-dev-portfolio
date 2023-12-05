@@ -79,9 +79,12 @@ class _ItemState extends State<Item> {
                 shape: OvalBorder(eccentricity: .5),
                 title: Row(
                   children: [
-                    Text(
-                      widget.item.label,
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                    Flexible(
+                      child: Text(
+                        // widget.item.label,
+                        'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 ),
