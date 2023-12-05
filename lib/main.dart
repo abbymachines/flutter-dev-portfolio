@@ -86,14 +86,22 @@ class _MyAppState extends State<MyApp> {
               _screenContent,
               // PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
               Container(
-                decoration: BoxDecoration(color: Colors.lime),
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 57, 84, 220)),
                 child: ButtonBar(
                   children: [
                     TextButton(
-                        onPressed: setBlogScreen, child: const Text('BLOG')),
+                      onPressed: setBlogScreen,
+                      child: const Text('BLOG',
+                          style: TextStyle(color: Colors.white)),
+                    ),
                     TextButton(
-                        onPressed: setPortfolioScreen,
-                        child: const Text('PORTFOLIO'))
+                      onPressed: setPortfolioScreen,
+                      child: const Text(
+                        'PORTFOLIO',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ],
                 ),
               ),
