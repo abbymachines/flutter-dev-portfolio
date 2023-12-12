@@ -96,7 +96,7 @@ A public demo of this app will be available soon (November 2023) on this website
   GenericItem(
       label: 'The Extent of Our Knowledge',
       expandedText:
-          'Data visualization/sonification made with MAX M/S/P. Created as a project during the Creative Coding & Immersive Technologies program at Portland Community College.',
+          'Data visualization/sonification made with MAX M/S/P. Created as a project during the Creative Coding & Immersive Technologies program at Portland Community College. Documents weekly COVID deaths from 2020-2022 as audio and  [Video available on YouTube.](https://www.youtube.com/watch?v=xNiid90HxCQ)',
       color: const Color.fromARGB(255, 255, 252, 252)),
   GenericItem(
     label: 'Education',

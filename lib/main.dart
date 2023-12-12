@@ -45,6 +45,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     // final width = MediaQuery.of(context).size.width * .6;
+    final start = MediaQuery.of(context).size.width * .1;
 
     return MaterialApp(
       title: 'AbbyCastillo.Dev',
@@ -73,8 +74,24 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.fromLTRB(55.0, 0, 0, 0),
-                child: Container(child: Text('hello world')),
+                padding: EdgeInsets.fromLTRB(
+                    (MediaQuery.of(context).size.width * .08), 0, 0, 0),
+                child: Container(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Abby Castillo',
+                        style: TextStyle(fontSize: 35, color: Colors.white),
+                      ),
+                      Text(
+                        'full-stack web developer',
+                        style: TextStyle(fontSize: 10, color: Colors.white),
+                      ),
+                      SizedBox(height: 5),
+                    ],
+                  ),
+                ),
               ),
               Expanded(
                 child: Column(
