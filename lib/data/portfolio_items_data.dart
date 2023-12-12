@@ -83,6 +83,8 @@ The app allows you to keep a list of habits and track their completion over time
 When habits are incomplete, the pet gets hungry and sick. Completing habits feeds the pet and makes it happier.
 
 A public demo of this app will be available soon (November 2023) on this website as **Tama To-Do**. This demo will include limited features, functioning as a to-do list instead of a habit tracker.
+
+![](assets/tamahabits0.png)
 ''',
       color: const Color.fromARGB(255, 255, 252, 252)),
   GenericItem(

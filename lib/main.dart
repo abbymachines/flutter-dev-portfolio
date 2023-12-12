@@ -70,36 +70,47 @@ class _MyAppState extends State<MyApp> {
           // width: double.infinity,
           padding: const EdgeInsets.all(0),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              //             Markdown(data: """
-              // # This is a Heading 1
-              // ## This is a Heading 2
-              // This is a paragraph with some *italic* and **bold** text.
-              // - This is a bullet point
-              // - Another bullet point
-              // 1. This is a numbered list
-              // 2. Another numbered item
-              // """),
-              _screenContent,
-              // PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
-              Container(
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 57, 84, 220)),
-                child: ButtonBar(
+              Padding(
+                padding: const EdgeInsets.fromLTRB(55.0, 0, 0, 0),
+                child: Container(child: Text('hello world')),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    TextButton(
-                      onPressed: setBlogScreen,
-                      child: const Text('BLOG',
-                          style: TextStyle(color: Colors.white)),
-                    ),
-                    TextButton(
-                      onPressed: setPortfolioScreen,
-                      child: const Text(
-                        'PORTFOLIO',
-                        style: TextStyle(color: Colors.white),
+                    //             Markdown(data: """
+                    // # This is a Heading 1
+                    // ## This is a Heading 2
+                    // This is a paragraph with some *italic* and **bold** text.
+                    // - This is a bullet point
+                    // - Another bullet point
+                    // 1. This is a numbered list
+                    // 2. Another numbered item
+                    // """),
+                    _screenContent,
+                    // PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 57, 84, 220)),
+                      child: ButtonBar(
+                        children: [
+                          TextButton(
+                            onPressed: setBlogScreen,
+                            child: const Text('BLOG',
+                                style: TextStyle(color: Colors.white)),
+                          ),
+                          TextButton(
+                            onPressed: setPortfolioScreen,
+                            child: const Text(
+                              'PORTFOLIO',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
