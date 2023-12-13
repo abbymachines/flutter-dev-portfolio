@@ -23,60 +23,36 @@ final items = [
       mainText:
           'focusing on full-stack web development and mobile app development',
       expandedText: '''
-## **LANGUAGES**:
-
-- Python
-- Dart
-- JavaScript
-- SQL
-- Java
-- Max/MSP
+| LANGUAGES | FRONT-END |
+| --- | --- |
+| Python | Flutter |
+| Dart | React.js |
+| JavaScript | HTML |
+| Java | CSS |
+| Max/MSP | Processing |
+| | P5 |
           
-## **FRONT-END**: 
 
-- Flutter
-- React.js
-- HTML
-- CSS
-- Processing
-- P5
+| BACK-END | OTHER SKILLS |
+| --- | --- |
+| Flask | REST APIs |
+| PostgreSQL | Time/Space Complexity Analysis (Big O) |
+| Firebase | microcontrollers (Arduino, Teensy) |
+| SQLAlchemy | Git & GitHub |
+|  | app deployment |
+| | test-driven development (Pytest) |
+| | Jupyter Notebooks |
 
-## **BACK-END**
-
-- Flask
-- PostgreSQL
-- Firebase
-- SQLAlchemy
-          
-## **OTHER SKILLS**:
-
-- REST APIs
-- microcontrollers (Arduino, Teensy)
-- git & github
-- app deployment (via Render & Github Pages)
-- test-driven development (Pytest)
-- jupyter notebooks
-
-## **CREATIVE**:
-
-- Ableton Live
-- Figma
-- Affinity Suite (Photo, Designer, Publisher)
-- Adobe Suite (Photoshop, Illustrator, InDesign)
-- iMovie
-- DaVinci Resolve
-- Canva
-- Tupi
-
-## **SaaS**:
-
-- Neon CRM
-- Mailchimp
-- Asana
-- Zoom
-- Squarespace
-- Google Workspaces / Google Admin Consolel
-- eVoice
+| CREATIVE | SaaS |
+| --- | --- |
+| Ableton Live | Neon CRM |
+| Figma | Mailchimp |
+| Affinity Suite (Photo, Designer, Publisher) | Asana |
+| Adobe Suite (Photoshop, Illustrator, InDesign) | Zoom |
+| iMovie | Squarespace |
+| DaVinci Resolve | Google Workspaces / Google Admin Console |
+| Canva | eVoice |
+| Tupi (animation software) |  |
 '''),
   GenericItem(
       label: 'A (AR video series)',
