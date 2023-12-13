@@ -5,10 +5,14 @@ import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final items = [
   GenericItem(
-    label: 'Hello! :) My name is Abby Castillo.',
+    label: 'Bio & Email',
     mainText: "it's true i think!",
     expandedText: '''
+  Hello! :) My name is Abby Castillo.
+
   I am a full-stack software developer and interdisciplinary artist based in Portland, OR. I am **currently looking for work!**
+
+  email: abby.machines@gmail.com
 ''',
     color: const Color.fromARGB(255, 255, 195, 15),
     style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
@@ -21,53 +25,59 @@ final items = [
       expandedText: '''
 ## **LANGUAGES**:
 
-  • Python
-
-  • Dart
-
-  • JavaScript
-
-  • SQL
-
-  • Dart
-
-  • Java
-
-  • Max MSP
-
-  • Processing
-  
-  • P5
+- Python
+- Dart
+- JavaScript
+- SQL
+- Java
+- Max/MSP
           
 ## **FRONT-END**: 
 
-• React.js
+- Flutter
+- React.js
+- HTML
+- CSS
+- Processing
+- P5
 
-• HTML
+## **BACK-END**
 
-• CSS
-
-• Flutter
+- Flask
+- PostgreSQL
+- Firebase
+- SQLAlchemy
           
 ## **OTHER SKILLS**:
 
-• REST APIs
+- REST APIs
+- microcontrollers (Arduino, Teensy)
+- git & github
+- app deployment (via Render & Github Pages)
+- test-driven development (Pytest)
+- jupyter notebooks
 
-• git
+## **CREATIVE**:
 
-• CRM databases
+- Ableton Live
+- Figma
+- Affinity Suite (Photo, Designer, Publisher)
+- Adobe Suite (Photoshop, Illustrator, InDesign)
+- iMovie
+- DaVinci Resolve
+- Canva
+- Tupi
 
-• app deployment
+## **SaaS**:
 
-• data analysis
-
-• database design
-
-• test-driven development
-
-• jupyter notebooks
-
-• graphic design (Adobe Photoshop/Illustrator, Affinity Suite, Figma)'''),
+- Neon CRM
+- Mailchimp
+- Asana
+- Zoom
+- Squarespace
+- Google Workspaces / Google Admin Consolel
+- eVoice
+'''),
   GenericItem(
       label: 'A (AR video series)',
       expandedText:
