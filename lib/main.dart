@@ -115,7 +115,11 @@ class _MyAppState extends State<MyApp> {
                           color: const Color.fromARGB(255, 57, 84, 220)),
                       child: ButtonBar(
                         children: [
-                          // IconButton(onPressed: onPressed, icon: icon),
+                          IconButton(
+                            onPressed: setBlogScreen,
+                            icon: Icon(Icons.dehaze),
+                            color: Colors.white,
+                          ),
                           TextButton(
                             onPressed: setBlogScreen,
                             child: const Text('BLOG',
