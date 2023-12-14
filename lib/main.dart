@@ -113,18 +113,24 @@ class _MyAppState extends State<MyApp> {
                     Container(
                       decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 57, 84, 220)),
-                      child: ButtonBar(
+                      child: Row(
                         children: [
-                          IconButton(
-                            onPressed: setBlogScreen,
-                            icon: Icon(Icons.dehaze),
-                            color: Colors.white,
+                          Container(
+                            child: IconButton(
+                              onPressed: setBlogScreen,
+                              icon: Icon(Icons.dehaze),
+                              color: Colors.white,
+                            ),
+                            alignment: Alignment.topLeft,
                           ),
+                          // SizedBox(width: 20),
+                          Spacer(flex: 3),
                           TextButton(
                             onPressed: setBlogScreen,
                             child: const Text('BLOG',
                                 style: TextStyle(color: Colors.white)),
                           ),
+                          // Spacer(flex: 0),
                           TextButton(
                             onPressed: setPortfolioScreen,
                             child: const Text(
