@@ -20,7 +20,7 @@ class Item extends StatefulWidget {
 }
 
 class _ItemState extends State<Item> {
-  var _isExpanded = false;
+  var _isExpanded = true;
 
   void toggleExpanded(isExpanded) {
     if (isExpanded == true) {
@@ -62,11 +62,9 @@ class _ItemState extends State<Item> {
                 title: Row(
                   children: [
                     Flexible(
-                      child: Text(
-                        widget.item.label,
-                        // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
-                        style: const TextStyle(fontWeight: FontWeight.bold),
-                      ),
+                      child: Text(widget.item.label,
+                          // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
+                          style: TextStyle(fontWeight: FontWeight.bold)),
                     ),
                   ],
                 ),

@@ -21,6 +21,9 @@ class ItemList extends StatelessWidget {
   @override
   Widget build(context) {
     List expandedIndices = [];
+    for (final index in Iterable.generate(items.length)) {
+      expandedIndices.add(index);
+    }
     double width = MediaQuery.of(context).size.width * .9;
 
     return Expanded(

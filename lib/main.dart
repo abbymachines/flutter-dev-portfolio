@@ -51,13 +51,6 @@ class _MyAppState extends State<MyApp> {
       title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: const Text(
-        //     "Abby Castillo [dot] Dev",
-        //     style: TextStyle(fontSize: 10),
-        //   ),
-        //   toolbarHeight: 30,
-        // ),
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -68,7 +61,6 @@ class _MyAppState extends State<MyApp> {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           )),
-          // width: double.infinity,
           padding: const EdgeInsets.all(0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,22 +107,12 @@ class _MyAppState extends State<MyApp> {
                           color: const Color.fromARGB(255, 57, 84, 220)),
                       child: Row(
                         children: [
-                          // Container(
-                          //   child: IconButton(
-                          //     onPressed: setBlogScreen,
-                          //     icon: Icon(Icons.dehaze),
-                          //     color: Colors.white,
-                          //   ),
-                          //   alignment: Alignment.topLeft,
-                          // ),
-                          // SizedBox(width: 20),
                           Spacer(flex: 3),
                           TextButton(
                             onPressed: setBlogScreen,
                             child: const Text('BLOG',
                                 style: TextStyle(color: Colors.white)),
                           ),
-                          // Spacer(flex: 0),
                           TextButton(
                             onPressed: setPortfolioScreen,
                             child: const Text(
