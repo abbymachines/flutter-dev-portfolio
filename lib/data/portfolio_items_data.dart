@@ -5,14 +5,16 @@ import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final items = [
   GenericItem(
-    label: 'Bio & Email',
+    label: 'Contact',
     mainText: "it's true i think!",
     expandedText: '''
   Hello! :) My name is Abby Castillo.
 
-  I am a full-stack software developer and interdisciplinary artist based in Portland, OR. I am **currently looking for work!**
+  I am a full-stack software engineer and interdisciplinary artist based in Portland, OR.
 
   email: abby.machines@gmail.com
+  
+  LinkedIn: https://www.linkedin.com/in/abbycc/
 ''',
     color: const Color.fromARGB(255, 255, 195, 15),
     style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
