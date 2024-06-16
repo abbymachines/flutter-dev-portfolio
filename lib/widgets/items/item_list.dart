@@ -22,7 +22,9 @@ class ItemList extends StatelessWidget {
   Widget build(context) {
     List expandedIndices = [];
     for (final index in Iterable.generate(items.length)) {
-      expandedIndices.add(index);
+      if (index != 1) {
+        expandedIndices.add(index);
+      }
     }
     double width = MediaQuery.of(context).size.width * .9;
 
