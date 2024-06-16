@@ -35,16 +35,10 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _screenContent = ItemList();
     });
-
-    // void onExpandItemListCard(expanded) {
-    //   if (expanded) {
-
-    //   }
   }
 
   @override
   Widget build(BuildContext context) {
-    // final width = MediaQuery.of(context).size.width * .6;
     final start = MediaQuery.of(context).size.width * .1;
 
     return MaterialApp(
@@ -69,7 +63,7 @@ class _MyAppState extends State<MyApp> {
                 padding: EdgeInsets.fromLTRB(
                     (MediaQuery.of(context).size.width * .08), 0, 0, 0),
                 child: Container(
-                  child: Column(
+                  child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
