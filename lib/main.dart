@@ -22,8 +22,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  dynamic _screenContent = ItemList();
-  List _itemListExpandedIndices = [];
+  dynamic _screenContent = const ItemList();
+  // List _itemListExpandedIndices = [];
 
   void setBlogScreen() {
     setState(() {
@@ -33,28 +33,28 @@ class _MyAppState extends State<MyApp> {
 
   void setPortfolioScreen() {
     setState(() {
-      _screenContent = ItemList();
+      _screenContent = const ItemList();
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    final start = MediaQuery.of(context).size.width * .1;
+    // final start = MediaQuery.of(context).size.width * .1;
 
     return MaterialApp(
       title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
         body: Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-            colors: [
-              Color.fromRGBO(0, 28, 175, 1),
-              Color.fromRGBO(188, 189, 197, 1),
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          )),
+          // decoration: const BoxDecoration(
+          //     gradient: LinearGradient(
+          //   colors: [
+          //     Color.fromRGBO(0, 28, 175, 1),
+          //     Color.fromRGBO(188, 189, 197, 1),
+          //   ],
+          //   begin: Alignment.topLeft,
+          //   end: Alignment.bottomRight,
+          // )),
           padding: const EdgeInsets.all(0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,11 +68,11 @@ class _MyAppState extends State<MyApp> {
                     children: [
                       Text(
                         'Abby Castillo',
-                        style: TextStyle(fontSize: 35, color: Colors.white),
+                        style: TextStyle(fontSize: 35, color: Colors.black),
                       ),
                       Text(
                         'full-stack web developer',
-                        style: TextStyle(fontSize: 10, color: Colors.white),
+                        style: TextStyle(fontSize: 10, color: Colors.black),
                       ),
                       SizedBox(height: 5),
                     ],

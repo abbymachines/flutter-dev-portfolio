@@ -31,7 +31,7 @@ class ItemList extends StatelessWidget {
     return Expanded(
       child: SizedBox(
         width: width,
-        height: MediaQuery.of(context).size.height,
+        // height: MediaQuery.of(context).size.height,
         child: ListView.separated(
           // physics: ClampingScrollPhysics(),
           itemCount: items.length,
