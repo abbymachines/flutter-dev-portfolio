@@ -29,8 +29,9 @@ class ItemList extends StatelessWidget {
     double width = MediaQuery.of(context).size.width * .9;
 
     return Expanded(
-      child: Container(
+      child: SizedBox(
         width: width,
+        height: MediaQuery.of(context).size.height,
         child: ListView.separated(
           // physics: ClampingScrollPhysics(),
           itemCount: items.length,
@@ -61,7 +62,7 @@ class ItemList extends StatelessWidget {
                     items[index].image,
                   ),
                 ),
-                shape: OvalBorder(eccentricity: .5),
+                shape: const OvalBorder(eccentricity: .5),
                 title: Row(
                   children: [
                     Flexible(

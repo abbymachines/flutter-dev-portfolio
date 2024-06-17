@@ -29,8 +29,8 @@ final items = [
       expandedText: '''
 | LANGUAGES | FRONT-END |
 | --- | --- |
-| Python | Flutter |
-| Dart | React.js |
+| Python ![Python](assets/skills_icons/python.png) | Flutter ![Flutter](assets/skills_icons/flutter.png) |
+| Dart ![Dart](assets/skills_icons/dart.png) | React.js |
 | JavaScript | HTML |
 | Java | CSS |
 | Max/MSP | Processing |
@@ -39,7 +39,8 @@ final items = [
 
 | BACK-END | OTHER SKILLS |
 | --- | --- |
-| Flask | REST APIs |
+| Ruby on Rails | REST APIs |
+| Flask | |
 | PostgreSQL | Time/Space Complexity Analysis (Big O) |
 | Firebase | microcontrollers (Arduino, Teensy) |
 | SQLAlchemy | Git & GitHub |
@@ -49,14 +50,11 @@ final items = [
 
 | CREATIVE | SaaS |
 | --- | --- |
-| Ableton Live | Neon CRM |
+| Ableton Live | Neon CRM | Jira |
 | Figma | Mailchimp |
 | Affinity Suite (Photo, Designer, Publisher) | Asana |
 | Adobe Suite (Photoshop, Illustrator, InDesign) | Zoom |
-| iMovie | Squarespace |
-| DaVinci Resolve | Google Workspaces / Google Admin Console |
-| Canva | eVoice |
-| Tupi (animation software) |  |
+| DaVinci Resolve | Google Workspaces | Canva |
 '''),
   GenericItem(
       label: 'A (AR video series)',
