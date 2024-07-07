@@ -37,7 +37,7 @@ class ItemList extends StatelessWidget {
           itemCount: items.length,
           shrinkWrap: true,
           separatorBuilder: (ctx, index) {
-            return const SizedBox(height: 5);
+            return const SizedBox(height: 10);
           },
           itemBuilder: (ctx, index) =>
               // Item(key: ValueKey(items[index]), items[index]),
@@ -46,61 +46,52 @@ class ItemList extends StatelessWidget {
             elevation: 10,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: ExpansionTile(
-                maintainState: true,
-                onExpansionChanged: (expanded) {
-                  if (expanded) {
-                    expandedIndices.add(index);
-                  } else {
-                    expandedIndices.remove(index);
-                  }
-                },
-                initiallyExpanded: expandedIndices.contains(index),
-                controlAffinity: ListTileControlAffinity.leading,
-                trailing: Container(
-                  child: Image.asset(
-                    items[index].image,
+              child: Theme(
+                data: Theme.of(context)
+                    .copyWith(dividerColor: Colors.transparent),
+                child: ExpansionTile(
+                  maintainState: true,
+                  onExpansionChanged: (expanded) {
+                    if (expanded) {
+                      expandedIndices.add(index);
+                    } else {
+                      expandedIndices.remove(index);
+                    }
+                  },
+                  initiallyExpanded: expandedIndices.contains(index),
+                  controlAffinity: ListTileControlAffinity.leading,
+                  trailing: Container(
+                    child: Image.asset(
+                      items[index].image,
+                    ),
                   ),
-                ),
-                title: Row(
-                  children: [
-                    Flexible(
-                      child: Text(
-                        items[index].label,
-                        // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          // overflow: TextOverflow.fade
+                  title: Row(
+                    children: [
+                      Flexible(
+                        child: Text(
+                          items[index].label,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                        // overflow: TextOverflow.clip,
+                      ),
+                    ],
+                  ),
+                  expandedAlignment: Alignment.topLeft,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: MarkdownBody(
+                        data: items[index].expandedText,
+                        selectable: true,
+                        onTapLink: (text, href, title) {
+                          href != null ? launchUrlString(href) : null;
+                        },
                       ),
                     ),
+                    // ),
                   ],
                 ),
-                expandedAlignment: Alignment.topLeft,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: MarkdownBody(
-                      data: items[index].expandedText,
-                      selectable: true,
-                      onTapLink: (text, href, title) {
-                        href != null ? launchUrlString(href) : null;
-                      },
-                    ),
-                    // child: RichText(
-                    // text: TextSpan(
-                    //     text: 'Hello',
-                    //     style: DefaultTextStyle.of(context).style,
-                    //     children: const <TextSpan>[
-                    //       TextSpan(
-                    //           text: 'bold',
-                    //           style: TextStyle(fontWeight: FontWeight.bold)),
-                    //       TextSpan(text: 'world!'),
-                    //     ]),
-                  ),
-                  // ),
-                ],
               ),
             ),
           ),
