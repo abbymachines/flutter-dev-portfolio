@@ -62,21 +62,19 @@ class _MyAppState extends State<MyApp> {
               Padding(
                 padding: EdgeInsets.fromLTRB(
                     (MediaQuery.of(context).size.width * .08), 0, 0, 0),
-                child: Container(
-                  child: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Abby Castillo',
-                        style: TextStyle(fontSize: 35, color: Colors.black),
-                      ),
-                      Text(
-                        'full-stack web developer',
-                        style: TextStyle(fontSize: 10, color: Colors.black),
-                      ),
-                      SizedBox(height: 5),
-                    ],
-                  ),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Abby Castillo',
+                      style: TextStyle(fontSize: 35, color: Colors.black),
+                    ),
+                    Text(
+                      'full-stack web developer',
+                      style: TextStyle(fontSize: 10, color: Colors.black),
+                    ),
+                    SizedBox(height: 5),
+                  ],
                 ),
               ),
               Expanded(
@@ -85,15 +83,6 @@ class _MyAppState extends State<MyApp> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    //             Markdown(data: """
-                    // # This is a Heading 1
-                    // ## This is a Heading 2
-                    // This is a paragraph with some *italic* and **bold** text.
-                    // - This is a bullet point
-                    // - Another bullet point
-                    // 1. This is a numbered list
-                    // 2. Another numbered item
-                    // """),
                     _screenContent,
                     // PetBox(Pet(creature: 'sproutling', dialogues: petDialogues)),
                     Container(

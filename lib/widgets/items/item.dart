@@ -46,44 +46,41 @@ class _ItemState extends State<Item> {
           child: Card(
             color: widget.item.color,
             elevation: 10,
-            child: Padding(
-              padding: const EdgeInsets.all(10),
-              child: ExpansionTile(
-                initiallyExpanded: _isExpanded,
-                onExpansionChanged: toggleExpanded,
-                maintainState: true,
-                controlAffinity: ListTileControlAffinity.leading,
-                trailing: Container(
-                  child: Image.asset(
-                    widget.item.image,
-                  ),
+            child: ExpansionTile(
+              initiallyExpanded: _isExpanded,
+              onExpansionChanged: toggleExpanded,
+              maintainState: true,
+              controlAffinity: ListTileControlAffinity.leading,
+              trailing: Container(
+                child: Image.asset(
+                  widget.item.image,
                 ),
-                shape: OvalBorder(eccentricity: .5),
-                title: Row(
-                  children: [
-                    Flexible(
-                      child: Text(widget.item.label,
-                          // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                    ),
-                  ],
-                ),
-                expandedAlignment: Alignment.topLeft,
-                children: <Widget>[
-                  // MarkdownBody(data: widget.item.mainText),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: MarkdownBody(
-                      data: widget.item.expandedText,
-                      // selectable: true,
-                      onTapLink: (text, href, title) {
-                        href != null ? launchUrlString(href) : null;
-                      },
-                      selectable: true,
-                    ),
+              ),
+              // shape: const OvalBorder(eccentricity: .1),
+              title: Row(
+                children: [
+                  Flexible(
+                    child: Text(widget.item.label,
+                        // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
                   ),
                 ],
               ),
+              expandedAlignment: Alignment.topLeft,
+              children: <Widget>[
+                // MarkdownBody(data: widget.item.mainText),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: MarkdownBody(
+                    data: widget.item.expandedText,
+                    // selectable: true,
+                    onTapLink: (text, href, title) {
+                      href != null ? launchUrlString(href) : null;
+                    },
+                    // selectable: true,
+                  ),
+                ),
+              ],
             ),
           ),
         ),

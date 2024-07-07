@@ -45,7 +45,7 @@ class ItemList extends StatelessWidget {
             color: items[index].color,
             elevation: 10,
             child: Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(8.0),
               child: ExpansionTile(
                 maintainState: true,
                 onExpansionChanged: (expanded) {
@@ -62,7 +62,6 @@ class ItemList extends StatelessWidget {
                     items[index].image,
                   ),
                 ),
-                shape: const OvalBorder(eccentricity: .5),
                 title: Row(
                   children: [
                     Flexible(
