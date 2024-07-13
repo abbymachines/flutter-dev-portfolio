@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:uuid/uuid.dart';
 import 'package:flutter_dev_portfolio/constants/images.dart';
 

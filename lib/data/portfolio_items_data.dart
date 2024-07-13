@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/generic_item.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final items = [
@@ -60,7 +59,7 @@ final items = [
       label: 'A (AR video series)',
       expandedText:
           "'A' is a series of AR videos made with Meta Spark Studio. Part of a 2023 Precipice Fund grant. Videos online at [TikTok](https://tiktok.com/@abbymachines).",
-      color: Color.fromARGB(255, 255, 252, 252)),
+      color: const Color.fromARGB(255, 255, 252, 252)),
   GenericItem(
       label: 'Tama Habits',
       expandedText:

@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/blog_post.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:flutter_dev_portfolio/constants/images.dart';
 
 final blogPostData = [
   BlogPost(date: '2023.11.30', body: '''

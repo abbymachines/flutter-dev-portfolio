@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_portfolio/models/generic_item.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:flutter_dev_portfolio/constants/images.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class Item extends StatefulWidget {
@@ -62,7 +60,7 @@ class _ItemState extends State<Item> {
                   Flexible(
                     child: Text(widget.item.label,
                         // 'testing with a very long string of text in order to test the overflow settings! just trying to see what happens',
-                        style: TextStyle(fontWeight: FontWeight.bold)),
+                        style: const TextStyle(fontWeight: FontWeight.bold)),
                   ),
                 ],
               ),

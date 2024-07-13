@@ -37,7 +37,7 @@ class _PetBoxState extends State<PetBox> {
   Widget build(BuildContext context) {
     // final speechLength = widget.pet.dialogues;
     return Container(
-      margin: EdgeInsets.all(0),
+      margin: const EdgeInsets.all(0),
       decoration: const BoxDecoration(
         // borderRadius: BorderRadius.all(
         //   Radius.circular(25),
