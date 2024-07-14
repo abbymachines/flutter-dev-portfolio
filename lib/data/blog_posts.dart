@@ -1,6 +1,17 @@
 import 'package:flutter_dev_portfolio/models/blog_post.dart';
 
 final blogPostData = [
+  BlogPost(date: '2024.7.14', body: '''
+I'm still here! I got busy for a little while... I did an internship at Cerebral! I'm still there, but finish up in two weeks. It's been great! I've learned a lot about Ruby on Rails. I'll have more to share about that when I'm done.
+
+As far as this website is concerned... I figured out how to render images in my Github Pages deployment. For some reason, my images were rendering locally but not on the actual page online. I build the website out for browsers using `flutter build web`. I take the generated build files and dump them into a separate repo. Then I push those files to Github, where I can then deploy the site via Github Pages.
+
+The reason images were not rendering in the deployed version is very simple. My images are contained within the path `/assets`, but when they are built for web the images are placed within `/assets/assets`. I moved the image files into their parent folder and voila, they rendered! How silly.
+
+The icons for the items in my "Skills" card were also not rendering. For some reason, these image files were simply not being placed into my build files. Adding these images to the `/assets` folder also fixed the problem. Easy!
+
+I was thinking I would like to automate some of the deployment process. There is a package for Flutter called `github_pages`, which builds the app for web in its own branch, which can then be deployed to Github Pages. I ran into a lot of problems while casually trying to implement the package into my project. Maybe I'll try again later! Who knows, maybe I'll even write my own deployment script so it works exactly how I want it to work.
+'''),
   BlogPost(date: '2023.11.30', body: '''
 I'd like to be a bit more consistent with my posting. I've been grinding away trying to get my developer website to a presentable state. I don't think I'm the entire way there yet, but I have successfully deployed AbbyCastillo.dev to github pages, and attached it to a domain.
 
@@ -32,19 +43,5 @@ Flutter is an interesting framework. It's very powerful and has a wonderful deve
 This is my developer blog. This is a space for me to document the day-by-day process of building my developer portfolio, and other software development projects.
 
 I'm still not entirely sure how to format paragraphs with the way my blog is set up. But I'm learning! Everything is coming along.
-"""),
-  BlogPost(
-    date: '2023.10.17',
-    blurb: 'please leave a message at the beep',
-    body: 'believe it or not, **george** isnt at home',
-  ),
-  BlogPost(
-    date: '2023.10.10',
-    blurb: 'hi',
-    body: 'hello world :) hello to you',
-  ),
-  BlogPost(
-    date: 'anytime',
-    body: 'lorum ipsums',
-  ),
+""")
 ];
