@@ -35,8 +35,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    // final start = MediaQuery.of(context).size.width * .1;
-
     return MaterialApp(
       title: 'AbbyCastillo.Dev',
       theme: ThemeData(useMaterial3: true),

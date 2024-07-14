@@ -11,18 +11,21 @@ class BlogColumn extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Expanded(
-      // child: ListView.builder(
-      //   itemCount: blogPostData.length,
-      //   itemBuilder: (ctx, index) => BlogPostItem(
-      //       key: ValueKey(blogPostData[index]), blogPostData[index]),
-      // ),
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width * .9,
-        child: ListView.builder(
-          itemCount: blogPostData.length,
-          itemBuilder: (ctx, index) => BlogPostItem(
-              key: ValueKey(blogPostData[index]), blogPostData[index]),
+    return Theme(
+      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+      child: Expanded(
+        // child: ListView.builder(
+        //   itemCount: blogPostData.length,
+        //   itemBuilder: (ctx, index) => BlogPostItem(
+        //       key: ValueKey(blogPostData[index]), blogPostData[index]),
+        // ),
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width * .9,
+          child: ListView.builder(
+            itemCount: blogPostData.length,
+            itemBuilder: (ctx, index) => BlogPostItem(
+                key: ValueKey(blogPostData[index]), blogPostData[index]),
+          ),
         ),
       ),
     );
