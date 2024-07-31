@@ -1,7 +1,45 @@
 import 'package:flutter_dev_portfolio/models/blog_post.dart';
 
 final blogPostData = [
-  BlogPost(date: '2024.7.14', body: '''
+  BlogPost(date: '2024.7.31: One Thousand Machines v1.1', body: '''
+(excerpted from [abbymachines.art](https://abbymachines.art/A/OneThousandMachines_v1-1/)):
+
+ONE THOUSAND MACHINES v1.1
+
+**2022.1.12**. currently in r&d.
+
+**2022.2.15**. I was supposed to write this on January. I’ve been falling behind on everything.
+
+OK. Here’s the run-down. Once a day for one thousand days between 2014 and 2017, I edited and posted to a blog a new poem in a series called One Thousand Machines. These poems were made using the tool “That can be my next tweet!” by Monokai. TCBMNT is a web app that randomly generates a new tweet for you based on the tweets already on your Twitter account. Once a day, I clicked on this tool to generate a new tweet. I would then copy it to an empty Tumblr post and add spaces, line breaks, underscores, italics, bold text, and strikethroughs. No deletions. Those were all the changes I allowed myself to make. After editing, I then would hit the post button and publish it to the One Thousand Machines Tumblr blog.
+
+In May of 2020, I deleted my Tumblr account, which included my personal blog from 2008-2020, as well as the entirety of One Thousand Machines. Some scraps remain here and there, but almost all of the poems are completely lost. I deleted my blog because I was having a manic episode. I don’t want to get into it right now. It was a bad time and I’m still traumatized from the events that led me to that manic episode.
+
+Although I have lost the entirety of One Thousand Machines, one important piece of that project remains on my hard drives: my Twitter archive. This is the same corpus of text I used to make the original project. So my goal now is to recreate a new version of One Thousand Machines from that archive.
+
+I plan to use Markov Chain text generation. Daniel Shiffman has a great video on doing Markov Chain text generation here: https://www.youtube.com/watch?v=eGFJ8vugIWA
+
+The challenge will be to find some way to group different sets of tweets from the big corpus to form various corpuses corresponding to each of the 1,000 days. Each corpus will be unique, though there will be a lot of overlap between days. Each of these corpuses is the source text for each day’s Markov generation. Once I figure this part out, the goal is to automatically generate one thousand drafts for one thousand new poems. I will then edit and post them once a day for one thousand days.
+
+I think this one will be called One Thousand Machines v1.1.
+
+**2022.4.17**. I am writing out this small report in place of my February report, which I missed. I had bitten off entirely too much to chew this year in terms of projects and responsibilities. Recently I lightened my workload, so hopefully I'll have more time for other projects. Not much has been done for One Thousand Machines, except for the development of a simple chatbot that uses Markov chains. I think I'll demonstrate this program and explain some of how it works in my upcoming "March" report.
+
+**2022.4.20**. This entry is in place of my March report. I was rooting through my files and found roughly 60 poems from One Thousand Machines (v1). These have been collected through various means, which I'll detail more later. For today I just wanted to share a few of the poems.
+
+![](assets/one_thousand_machines/one-thousand-machines_63.png)
+
+![](assets/one_thousand_machines/one-thousand-machines_147.jpg)
+
+![](assets/one_thousand_machines/one-thousand-machines_476-1.png)
+
+![](assets/one_thousand_machines/one-thousand-machines_515.png)
+
+![](assets/one_thousand_machines/one-thousand-machines_745.png)
+
+![](assets/one_thousand_machines/one-thousand-machines_1000.jpg)
+          '''),
+  BlogPost(
+      date: '2024.7.14: rendering Flutter assets in GitHub pages', body: '''
 I'm still here! I got busy for a little while... I did an internship at Cerebral! I'm still there, but finish up in two weeks. It's been great! I've learned a lot about Ruby on Rails. I'll have more to share about that when I'm done.
 
 As far as this website is concerned... I figured out how to render images in my Github Pages deployment. For some reason, my images were rendering locally but not on the actual page online. I build the website out for browsers using `flutter build web`. I take the generated build files and dump them into a separate repo. Then I push those files to Github, where I can then deploy the site via Github Pages.
